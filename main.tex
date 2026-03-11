@@ -1,0 +1,42 @@
+%-------------- MASTER RESUME FILE (Modular) --------------
+% main.tex contains ONLY structure and section titles
+% Formatting lives in config/formatting.tex
+% Content lives in sections/*.tex
+%----------------------------------------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% Import formatting + custom macros
+\input{config/formatting}
+\input{config/commands}
+
+\begin{document}
+
+% ----- HEADING -----
+\input{sections/heading}
+
+% ----- EDUCATION -----
+\section{Education}
+\input{sections/education}
+
+% ----- TECHNICAL SKILLS -----
+\section{Technical Skills}
+\input{sections/skills}
+
+% ----- WORK EXPERIENCE -----
+\section{Work Experience}
+\input{sections/experience/experience}
+
+% ----- PROJECTS -----
+\section{Projects}
+\input{sections/projects/projects}
+
+% % ----- HOBBIES & INTERESTS -----
+% \section{Hobbies \& Interests}
+% \input{sections/hobbies}
+
+% ----- RELEVANT COURSES -----
+\section{Relevant Courses}
+\input{sections/courses}
+
+\end{document}

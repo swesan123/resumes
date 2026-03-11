@@ -1,0 +1,30 @@
+%---------------------- CUSTOM MACROS ------------------------
+
+% Bullet-wrapped resume item
+\newcommand{\resumeItem}[1]{
+  \item \parbox[t]{\descwidth}{\small #1}
+}
+
+% Work/Project experience entry format
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Project heading (title + date)
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabularx}{0.97\textwidth}{@{}>{\raggedright\arraybackslash}X r@{}}
+    \small #1 & \textit{\small #2} \\
+  \end{tabularx}\vspace{-7pt}
+}
+
+% List wrappers
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
