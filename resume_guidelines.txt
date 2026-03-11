@@ -1,0 +1,98 @@
+Software Engineering Resume Bullet Point Guidelines
+===================================================
+
+High-level principles
+---------------------
+- Focus every bullet on **impact**, not duties. Answer: What did you do, how did you do it, and why did it matter?
+- Use a consistent formula: Action Verb + What you built/changed + Technologies used + Measurable result.
+- Prioritize clarity and scannability over buzzwords or dense jargon.
+- Make each line independently compelling; recruiters often skim only the first few words and any bolded keywords.
+
+Bullet point structure
+----------------------
+- Start with a strong action verb:
+  - Examples: Architected, Designed, Implemented, Engineered, Optimized, Refactored, Automated, Deployed, Led, Spearheaded.
+  - Avoid weak openings: "Responsible for", "Worked on", "Helped with", "Tasked with".
+- Clearly state what you built or changed:
+  - Name the system, feature, or component (API, service, pipeline, model, dashboard, CLI, etc.).
+  - Briefly describe the problem or goal if it is not obvious.
+- Include the key technologies and skills you want to be searched for:
+  - Mention languages, frameworks, databases, cloud providers, tools, paradigms (e.g., Python, React, PostgreSQL, AWS, Docker, Kubernetes, REST, gRPC, RAG, LLMs).
+- End with a concrete outcome:
+  - Use metrics where possible: performance, reliability, revenue, cost, engagement, throughput, latency, accuracy, error rates.
+  - If you cannot share exact numbers, use relative metrics (e.g., "reduced build time by ~40%").
+
+Impact and metrics
+------------------
+- Always try to quantify impact:
+  - Performance: latency (ms), throughput (req/s), CPU/memory savings, build time.
+  - Reliability: error-rate reduction, incident frequency, uptime/SLA improvements.
+  - Scale: number of users, requests per day, size of datasets, number of services.
+  - Business: revenue, cost savings, churn reduction, conversion or activation rate.
+- Example transformations:
+  - Weak: "Improved API performance."
+  - Strong: "Optimized Node.js REST APIs and PostgreSQL queries, cutting P95 latency from 900ms to 320ms (64% faster) for 120k+ daily requests."
+  - Weak: "Worked on CI/CD."
+  - Strong: "Implemented GitHub Actions–based CI/CD pipelines with Dockerized builds and automated tests, reducing deployment failures by 30% and cutting release time from days to hours."
+
+Keyword and skills visibility (bolding strategy)
+-----------------------------------------------
+- Recruiters and automated screeners skim for specific skills and technologies. Make them visually obvious.
+- In LaTeX, bold important keywords using \\textbf{...} so they stand out on a quick scan:
+  - Languages: \\textbf{Python}, \\textbf{TypeScript}, \\textbf{Java}, \\textbf{C++}.
+  - Frameworks and libraries: \\textbf{React}, \\textbf{Node.js}, \\textbf{Django}, \\textbf{TensorFlow}, \\textbf{PyTorch}, \\textbf{LangChain}.
+  - Cloud and infrastructure: \\textbf{AWS}, \\textbf{GCP}, \\textbf{Azure}, \\textbf{Docker}, \\textbf{Kubernetes}.
+  - Domains: \\textbf{LLM Agents}, \\textbf{RAG Systems}, \\textbf{NLP Pipelines}, \\textbf{Distributed Systems}.
+- Recommended pattern inside bullets (adapt for your macros):
+  - "Built a \\textbf{Python} and \\textbf{LangChain}-based RAG assistant deployed on \\textbf{AWS ECS} and \\textbf{Lambda}, cutting support response time by 45\%."
+  - "Implemented a \\textbf{React} and \\textbf{TypeScript} front-end integrated with \\textbf{Node.js} and \\textbf{PostgreSQL} APIs, improving checkout conversion by 8\%."
+- Be intentional: bold only the most important skills and technologies per line (usually 2–4 terms) so the page does not become visually noisy.
+
+Style and phrasing guidelines
+-----------------------------
+- Use present tense for ongoing roles and past tense for completed roles and projects.
+- Keep bullets concise: typically 1–2 lines each; avoid wrapping to a third line when possible.
+- Avoid filler words and vague phrases:
+  - Replace "various", "multiple", "several", "a lot of" with concrete nouns and counts.
+  - Replace "helped", "assisted", "involved in" with direct ownership verbs.
+- Avoid internal or confidential code names unless you briefly explain them.
+- Prefer specific nouns over abstractions:
+  - "payment retry service" instead of "critical microservice".
+  - "log aggregation pipeline" instead of "data system".
+
+Project and experience bullets (engineering-specific tips)
+---------------------------------------------------------
+- For backend / infrastructure work:
+  - Emphasize APIs, data models, reliability, scaling, observability, and security.
+  - Call out patterns and tools: \\textbf{REST}, \\textbf{gRPC}, \\textbf{tRPC}, \\textbf{Kafka}, \\textbf{Redis}, \\textbf{Prometheus}, \\textbf{OpenTelemetry}.
+- For frontend work:
+  - Emphasize performance, UX, accessibility, and design systems.
+  - Mention frameworks and patterns: \\textbf{React}, \\textbf{Next.js}, \\textbf{Redux}, \\textbf{TypeScript}, \\textbf{Tailwind CSS}.
+- For ML / data work:
+  - Emphasize data pipelines, model training/evaluation, and productionization.
+  - Name key tools: \\textbf{TensorFlow}, \\textbf{PyTorch}, \\textbf{scikit-learn}, \\textbf{pandas}, \\textbf{NumPy}, \\textbf{Spark}, \\textbf{LangChain}, \\textbf{RAG}.
+- For DevOps / platform work:
+  - Emphasize CI/CD, infrastructure as code, monitoring, and reliability.
+  - Call out: \\textbf{Docker}, \\textbf{Kubernetes}, \\textbf{Terraform}, \\textbf{GitHub Actions}, \\textbf{CircleCI}, \\textbf{Jenkins}.
+
+Common bullet templates (adaptable)
+-----------------------------------
+- "Implemented [system/feature] using \\textbf{[tech1]}, \\textbf{[tech2]}, and \\textbf{[tech3]}, resulting in [metric] improvement in [latency/throughput/reliability/etc.]."
+- "Designed and deployed [pipeline/service] on \\textbf{[cloud]} with \\textbf{[infra tools]}, handling [scale] and reducing [cost/latency/errors] by [X\%]."
+- "Built [UI/feature] in \\textbf{[frontend techs]} to enable [user capability], increasing [engagement/conversion/retention] by [X\%]."
+- "Developed and productionized \\textbf{[ML/LLM]} models using \\textbf{[libraries]} and \\textbf{[cloud services]}, improving [accuracy/recall/etc.] from [A] to [B]."
+- "Automated [manual process] with \\textbf{[language/tool]}, saving [N] engineer-hours per [week/month] and reducing errors by [X\%]."
+
+How to use these guidelines with your LaTeX resume
+--------------------------------------------------
+- When writing or revising bullets, run through this quick checklist:
+  1) Does the bullet start with a strong action verb?
+  2) Does it clearly state what you built or changed?
+  3) Does it include the key technologies or skills you want to highlight (with \\textbf{...})?
+  4) Does it include at least one concrete metric or meaningful outcome?
+  5) Is it concise (ideally 1–2 lines) and free of vague language?
+- Apply consistent bolding across the resume so recruiters can quickly scan for:
+  - Languages and frameworks.
+  - Cloud / infra tools.
+  - Specialized domains (ML, LLMs, RAG, security, distributed systems).
+

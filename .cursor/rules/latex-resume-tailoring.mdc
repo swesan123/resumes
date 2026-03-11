@@ -1,0 +1,38 @@
+---
+description: Tailor LaTeX resume to job postings using resume_guidelines.txt as source of truth
+alwaysApply: true
+---
+
+# LaTeX Resume Tailoring in /home/swesan/resumes
+
+## Source of truth
+
+- Always treat `resume_guidelines.txt` in this repo as the **canonical specification** for resume bullet points.
+- If generic resume advice conflicts with `resume_guidelines.txt`, **prefer `resume_guidelines.txt`** unless the current chat explicitly overrides it.
+
+## When the user pastes a job posting
+
+- When the user pastes a job description and asks to tailor the resume:
+  - Extract the role/title, seniority/level, main responsibilities, and **8–12 core skills or keywords** from the posting.
+  - Use `resume_guidelines.txt` for bullet **style**, **phrasing**, **bolding**, and **impact/metrics** expectations.
+  - Propose or directly apply **concrete edits** to the LaTeX resume files in this repo to best align experience with the job, while staying honest.
+
+## Bullet expectations
+
+- Focus bullets on **impact, not duties**.
+- Follow the structure: **Action verb + what was built/changed + key technologies + measurable result**.
+- Aggressively look for metrics and outcomes (latency, throughput, errors, scale, revenue, cost, engagement, etc.).
+- Use `\textbf{...}` only for the **most important 2–4 technologies or skills per bullet** so the page stays scannable.
+
+## Editing behavior
+
+- Maintain the **existing LaTeX structure and macros**, preferring **minimal-diff edits** to existing `.tex` files.
+- Keep bullets concise (typically **1–2 lines**); avoid weak verbs and vague language.
+- Do **not** invent experience or skills; only **rephrase and highlight what is already true**.
+
+## Interaction style
+
+- By default, directly edit the `.tex` files in this repo when tailoring the resume, instead of only giving abstract advice.
+- After making edits, briefly summarize **which sections changed and why** relative to:
+  - the specific job posting, and
+  - the expectations in `resume_guidelines.txt`.

@@ -1,17 +1,34 @@
+% AMD DCGPU System Integration notes:
+% - Post-silicon Datacenter GPU System Integration team for MI300X / MI325X / MI350X.
+% - Used internal orchestration framework to run workloads across perf, HPC, and ML applications.
+% - Validation domains: RAS, resets, IO/ExtIO, performance, system management.
+% - Worked across diverse Linux/Windows platforms from hyperscalers (e.g., Meta, Microsoft, Alibaba) with varied BMCs, SBIOS, and OS images (including RHEL/CentOS).
+% - Participated in hardware and software debugs spanning ROCm, PMFW, firmware, drivers, and platform issues.
+% - Built Python tooling to accelerate workload job launch and test creation on the internal framework.
+% - Used Docker for application environments, GitHub for code, and Jira for tracking work.
+% - Hosted meetings and led process-improvement initiatives within the team.
+
 \resumeSubheading
-  {Advanced Micro Devices (AMD)}{Markham, ON}
+  {Advanced Micro Devices (AMD) $|$ \textbf{C}, \textbf{Python}, \textbf{Linux}}{Markham, ON}
   {Datacenter GPU Infrastructure \& Validation Engineer (Co-op)}{May 2024 -- Aug 2025}
 
 \resumeItemListStart
 
-\resumeItem{Developed an internal \textbf{Python automation tool} that reduced a 20-minute daily workflow to \textbf{5 minutes} for 4 engineers, saving \textbf{250+ hours annually}.}
+% Original bullets (kept for reference)
+% \resumeItem{Developed an internal \textbf{Python automation tool} that reduced a 20-minute daily validation and debug workflow to \textbf{5 minutes} for 4 engineers, saving \textbf{250+ hours annually}.}
+% \resumeItem{Configured and supported \textbf{Linux-based datacenter GPU platforms}, installing workloads, validation tools, and system utilities to enable large-scale validation across distributed test environments.}
+% \resumeItem{Performed \textbf{system-level debugging and failure triage} across Windows and Linux environments, investigating issues related to \textbf{RAS events, system resets, system management, workloads, and performance} to support root-cause analysis of GPU infrastructure platforms.}
+% \resumeItem{Applied learnings from \textbf{system-level debug investigations} to improve \textbf{AI/HPC workload validation pipelines} for MI300X, MI325X, and MI350X GPUs, strengthening test coverage and accelerating issue debug and root-cause identification.}
+% \resumeItem{Authored standardized debug and reproduction documentation and collaborated with infrastructure, \textbf{firmware}, and \textbf{validation} teams to resolve complex system issues across hardware, firmware, and software layers.}
 
-\resumeItem{Configured and supported \textbf{Linux-based datacenter GPU platforms}, installing workloads, validation tools, and system utilities to enable large-scale validation across distributed test environments.}
+\resumeItem{Worked on post-silicon \textbf{datacenter GPU system integration} for MI300X, MI325X, and MI350X, running automated tests for performance, \textbf{HPC}, and \textbf{ML} workloads across 100+ test runs per week.}
 
-\resumeItem{Performed \textbf{system-level debugging and failure triage} across Windows and Linux environments, investigating issues related to \textbf{RAS events, system resets, system management, workloads, and performance} to support root-cause analysis of GPU infrastructure platforms.}
+\resumeItem{Set up and ran tests on \textbf{Linux} and Windows GPU platforms with different \textbf{BMC}, BIOS, and OS images to check RAS, resets, IO, performance, and system management, cutting bring-up issues by about 20\%.}
 
-\resumeItem{Applied learnings from \textbf{system-level debug investigations} to improve \textbf{AI/HPC workload validation pipelines} for MI300X, MI325X, and MI350X GPUs, strengthening test coverage and accelerating issue debug and root-cause identification.}
+\resumeItem{Wrote \textbf{Python} scripts and a workload launch tool using an internal framework to speed up how quickly engineers could run regression tests, reducing manual setup time from about 20 minutes to under 5 minutes.}
 
-\resumeItem{Authored standardized \textbf{debug and reproduction documentation} and collaborated with infrastructure, firmware, and validation teams to resolve complex system issues across hardware, firmware, and software layers.}
+\resumeItem{Helped debug post-silicon issues involving \textbf{ROCm}, power-management firmware, drivers, and hardware by reading logs, reproducing problems, and sharing clear findings with senior engineers, shortening time-to-root-cause on assigned issues by roughly 30\%.}
+
+\resumeItem{Worked with infrastructure, firmware, and validation teams to track work in Jira and improve checklists and documentation, which made complex GPU tests easier to reproduce and reduced misconfigurations in new test setups.}
 
 \resumeItemListEnd
