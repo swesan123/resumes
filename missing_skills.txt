@@ -1,0 +1,19 @@
+# Missing skills tracker
+#
+# Purpose:
+# - Track which skills are missing from your resume for each job posting.
+# - Use the aggregated counts to decide what to learn or deepen next.
+#
+# Format (one per line):
+# <skill_name>: <count>
+#
+# Example:
+# React: 3
+# AWS: 2
+# Kotlin: 1
+#
+# Usage:
+# - When verifying a resume against a job description, if an important skill
+#   appears in the JD but not in your current resume (experience, projects,
+#   courses, or skills), increment its count here instead of editing history.
+

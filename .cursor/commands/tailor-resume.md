@@ -9,7 +9,12 @@ Steps:
 - If the argument is free text, treat it as the full job description.
 - From the resulting description, extract role, seniority, core responsibilities, and 8–12 key skills/keywords.
 - Follow `resume_guidelines.txt` for bullet style, bolding, and impact/metrics.
-- Directly edit the relevant `.tex` files (e.g., `sections/projects/*.tex`, `sections/experience/*.tex`, etc.) with minimal diffs to best match the job, without inventing experience.
+- Directly edit the relevant `.tex` files (e.g., `sections/projects/*.tex`, `sections/experience/*.tex`, `sections/skills.tex`, `sections/courses.tex`, etc.) with minimal diffs to best match the job, without inventing experience.
+- Automatically:
+  - Keep the resume to a **single page** by trimming low-impact bullets and commenting out lower-priority sections if needed.
+  - Select up to **3 projects** that best match the posting and comment out the rest in `projects.tex`.
+  - Render `Relevant Courses` as at most one line with 3–6 high-signal courses, commenting out the rest in `courses.tex`.
+  - Ensure every skill listed in `Technical Skills` has clear “proof” in at least one bullet, commenting out unproven skills.
 - Rebuild the resume if needed and summarize which sections changed and why in the chat.
 
 Input formats:

@@ -7,6 +7,7 @@ High-level principles
 - Use a consistent formula: Action Verb + What you built/changed + Technologies used + Measurable result.
 - Prioritize clarity and scannability over buzzwords or dense jargon.
 - Make each line independently compelling; recruiters often skim only the first few words and any bolded keywords.
+- Assume a **non-engineer recruiter** is reading first; prefer simple, concrete wording over domain jargon.
 
 Bullet point structure
 ----------------------
@@ -47,6 +48,7 @@ Keyword and skills visibility (bolding strategy)
   - "Built a \\textbf{Python} and \\textbf{LangChain}-based RAG assistant deployed on \\textbf{AWS ECS} and \\textbf{Lambda}, cutting support response time by 45\%."
   - "Implemented a \\textbf{React} and \\textbf{TypeScript} front-end integrated with \\textbf{Node.js} and \\textbf{PostgreSQL} APIs, improving checkout conversion by 8\%."
 - Be intentional: bold only the most important skills and technologies per line (usually 2–4 terms) so the page does not become visually noisy.
+ - When tailoring to a specific job, **only bold skills that actually appear in the job description** or very close synonyms.
 
 Style and phrasing guidelines
 -----------------------------
@@ -59,6 +61,7 @@ Style and phrasing guidelines
 - Prefer specific nouns over abstractions:
   - "payment retry service" instead of "critical microservice".
   - "log aggregation pipeline" instead of "data system".
+ - **Avoid brackets** like `()`, `[]`, `{}` in visible bullets and skills; prefer simple comma-separated lists instead (e.g., `Linux, CentOS, Ubuntu` instead of `Linux (CentOS, Ubuntu)`).
 
 Project and experience bullets (engineering-specific tips)
 ---------------------------------------------------------
@@ -95,4 +98,95 @@ How to use these guidelines with your LaTeX resume
   - Languages and frameworks.
   - Cloud / infra tools.
   - Specialized domains (ML, LLMs, RAG, security, distributed systems).
+
+Single-page layout, sections, and skills alignment
+--------------------------------------------------
+- Default to a **single-page resume** for internship, new grad, and early-career roles:
+  - Sections, in order: Heading, Education, Technical Skills, Work Experience, Projects, (Relevant Courses if space permits).
+  - Omit or comment out lower-priority sections (e.g., Hobbies, extra courses) when they cause overflow.
+- Treat **Technical Skills** as a promise that must be **proven in bullets**:
+  - Only list skills that appear in at least one Experience, Project, or Courses bullet **in the current one-page resume**.
+  - Derive the skills list **from the active sections** (current projects/experience shown), not from your entire background.
+  - When tailoring, prefer **commenting out** unused skills over adding new bullets just to justify them.
+- For company or project headings that include a skill list (e.g., `Company | \\textbf{Python}, \\textbf{Linux}`):
+  - Ensure each bolded technology also appears in the bullets for that entry.
+  - Do **not** bold tools that are not clearly supported by the underlying work.
+
+Projects and courses
+--------------------
+- Projects:
+  - For a given job, show **3 projects maximum**, chosen to best match the posting’s core skills and domains.
+  - Keep each project to **2 bullets** focused on what you built, how you tested it, and any scale/metrics.
+  - Prefer projects that provide **“proof”** for the most important skills in the job description.
+  - When a project heading includes a tech stack (e.g., `Project | Python, Docker, PostgreSQL`):
+    - **Every listed technology must have at least one supporting bullet** that mentions it.
+    - If a technology is not supported by a bullet, **remove it from the heading** instead of adding a weak bullet.
+    - For technologies that *are* supported and important, **bold them both in the project heading and in the supporting bullet** (e.g., `\textbf{Python}` in both places).
+  - Ensure every project has a **clear date range** on the heading that reflects reality.
+    - For your current degree timeline, keep project dates between **September 2025 and March 2026** unless there is a good reason to do otherwise.
+- Courses:
+  - Prefer a **single-line “Relevant Courses”** entry of 3–6 short course names when space is tight.
+  - Choose courses that directly support the job’s requirements (e.g., real-time, systems, hardware, security).
+  - Keep the full course list in comments in `courses.tex` so targeted subsets can be enabled per job without retyping.
+
+Practical one-page heuristics for this LaTeX template
+-----------------------------------------------------
+- For this `main.tex` layout (`11pt`, letter, current `config/formatting`):
+  - A single page typically fits:
+    - Heading, Education, Technical Skills, **1 work experience entry with up to 5 bullets**, 3 projects × 2 bullets, and a **one-line** Relevant Courses row.
+  - If the compiled PDF overflows to a second page:
+    - First, remove or merge lower-impact bullets from Projects or Experience until each entry has at most 2–3 bullets.
+    - Next, comment out optional sections (Hobbies, extra courses) or long skill lists.
+    - Recompile after each trimming pass rather than making many speculative edits.
+
+Compiling and saving role-specific resumes
+------------------------------------------
+- After tailoring and verification for a specific company/role:
+  - Compile `main.tex` to produce an updated `main.pdf`.
+  - Save/export the result into the `resumes/` folder using a **role-and-date-based name**:
+    - Pattern: `resumes/<role-name-with-dashes>-<YYYY-MM-DD>.pdf`
+    - Example: `resumes/System-Firmware-Engineer-2026-03-12.pdf`
+  - Convert spaces in the role name to dashes (`-`) so filenames are shell- and URL-friendly.
+
+Verification pass and match scoring
+-----------------------------------
+- After tailoring the resume to a specific job posting, run a **verification pass** before considering it final.
+- Use up to **3 lightweight passes** over the job description and resume:
+  1) **Job extraction pass**
+     - Re-extract:
+       - Role/title and level.
+       - 8–12 core skills/keywords from the posting (languages, tools, domains, OS, etc.).
+       - 3–5 core responsibilities (what this role actually does day to day).
+  2) **Section-by-section alignment pass**
+     - For each section (Technical Skills, Work Experience, Projects, Relevant Courses):
+       - Confirm that the **most important JD skills** appear somewhere on the page, ideally in bullets.
+       - Check that any **bolded skills** actually appear in the job description or are very close synonyms.
+       - Flag any bolded technologies that are not clearly supported by the job description or experience.
+       - Ensure there are **no brackets** in visible text and that bullets follow the style rules above.
+  3) **Style and layout pass**
+     - Confirm:
+       - One-page output for this template.
+       - Max 3 projects and 2 bullets per project.
+       - Relevant Courses is a single line with 3–6 short course names.
+       - Each bullet is 1–2 lines with at least one concrete outcome or scale detail where reasonable.
+- Compute a simple **match score (0–100)**:
+  - Example breakdown:
+    - 40 points: coverage of top JD skills/keywords.
+    - 30 points: coverage of core responsibilities (what the role actually does).
+    - 30 points: adherence to these guidelines (style, bolding, layout, no brackets).
+- If the score is **below ~85**, attempt targeted improvements:
+  - Tighten or swap bullets so they speak more directly to the JD.
+  - Swap in better-aligned projects or courses if available.
+  - Fix bolding (remove noisy bold, add missing bold for key JD skills where supported by experience).
+
+Missing skills tracking
+-----------------------
+- To decide what to learn next, maintain a simple skill counter in `missing_skills.txt`:
+  - When verifying against a job posting, build the set of **important JD skills/keywords**.
+  - For each such skill that does **not** appear in your current one-page resume (Experience, Projects, Courses, Technical Skills):
+    - Add it to `missing_skills.txt` or increment its count if it already exists.
+  - Do **not** add skills that you already know and simply chose not to highlight for this job.
+- Over time, use the highest-count entries in `missing_skills.txt` as a priority list for:
+  - What technologies or domains to study.
+  - Which kinds of projects or coursework to seek out to close the gaps.
 

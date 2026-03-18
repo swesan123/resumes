@@ -16,6 +16,7 @@ alwaysApply: true
   - Extract the role/title, seniority/level, main responsibilities, and **8–12 core skills or keywords** from the posting.
   - Use `resume_guidelines.txt` for bullet **style**, **phrasing**, **bolding**, and **impact/metrics** expectations.
   - Propose or directly apply **concrete edits** to the LaTeX resume files in this repo to best align experience with the job, while staying honest.
+  - **Automatically choose** which projects and courses to show based on the posting (up to 3 projects, and a single-line “Relevant Courses” entry), commenting out others instead of deleting them.
 
 ## Bullet expectations
 
@@ -29,6 +30,9 @@ alwaysApply: true
 - Maintain the **existing LaTeX structure and macros**, preferring **minimal-diff edits** to existing `.tex` files.
 - Keep bullets concise (typically **1–2 lines**); avoid weak verbs and vague language.
 - Do **not** invent experience or skills; only **rephrase and highlight what is already true**.
+- Keep the final resume to **one page** whenever reasonable for the user’s level by:
+  - Reducing low-impact bullets, trimming verbose wording, and removing or commenting out lower-priority sections.
+  - Preferring a compact, comma-separated `Relevant Courses` line over a long multi-line list.
 
 ## Interaction style
 
@@ -36,3 +40,4 @@ alwaysApply: true
 - After making edits, briefly summarize **which sections changed and why** relative to:
   - the specific job posting, and
   - the expectations in `resume_guidelines.txt`.
+  - any automatic choices made (e.g., which projects/courses were included or commented out, and why).
