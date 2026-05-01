@@ -99,6 +99,11 @@ How to use these guidelines with your LaTeX resume
   - Cloud / infra tools.
   - Specialized domains (ML, LLMs, RAG, security, distributed systems).
 
+LaTeX editing policy (no deletions)
+-----------------------------------
+- When tailoring, **do not delete** lines from `.tex` files to hide content.
+- Prefer **`%` comments** for skills lines, `\input{...}` project lines, sections, or old bullets so nothing is lost and variants can be restored quickly.
+
 Single-page layout, sections, and skills alignment
 --------------------------------------------------
 - Default to a **single-page resume** for internship, new grad, and early-career roles:
@@ -108,6 +113,7 @@ Single-page layout, sections, and skills alignment
   - Only list skills that appear in at least one Experience, Project, or Courses bullet **in the current one-page resume**.
   - Derive the skills list **from the active sections** (current projects/experience shown), not from your entire background.
   - When tailoring, prefer **commenting out** unused skills over adding new bullets just to justify them.
+  - **Formatting**: Bold **only** the category labels in each line (e.g. `\textbf{Languages}{: Python, C}`). Do **not** bold individual tools or languages after the colon—keep post-colon lists unbolded for a clean scan pattern.
 - For company or project headings that include a skill list (e.g., `Company | \\textbf{Python}, \\textbf{Linux}`):
   - Ensure each bolded technology also appears in the bullets for that entry.
   - Do **not** bold tools that are not clearly supported by the underlying work.
@@ -115,7 +121,7 @@ Single-page layout, sections, and skills alignment
 Projects and courses
 --------------------
 - Projects:
-  - For a given job, show **3 projects maximum**, chosen to best match the posting’s core skills and domains.
+  - For a given job, show **exactly 3 projects** (minimum 3, maximum 3), chosen to best match the posting’s core skills and domains.
   - Keep each project to **2 bullets** focused on what you built, how you tested it, and any scale/metrics.
   - Prefer projects that provide **“proof”** for the most important skills in the job description.
   - When a project heading includes a tech stack (e.g., `Project | Python, Docker, PostgreSQL`):
@@ -139,14 +145,21 @@ Practical one-page heuristics for this LaTeX template
     - Next, comment out optional sections (Hobbies, extra courses) or long skill lists.
     - Recompile after each trimming pass rather than making many speculative edits.
 
-Compiling and saving role-specific resumes
-------------------------------------------
-- After tailoring and verification for a specific company/role:
+Saving postings and compiling role-specific resumes
+----------------------------------------------------
+- When tailoring against a job description (paste or fetched URL):
+  - Persist the **full posting text** under `postings/` as a **new** dated `.txt` file (see `.cursor/skills/latex-resume-tailoring/SKILL.md` for `<role>_<company>-YYYY-MM-DD.txt` slugs and optional `#` metadata headers).
+  - Do **not** overwrite an existing `postings/*.txt` unless the user explicitly asks.
+- After tailoring (and optional verification) for a specific company/role:
   - Compile `main.tex` to produce an updated `main.pdf`.
-  - Save/export the result into the `resumes/` folder using a **role-and-date-based name**:
-    - Pattern: `resumes/<role-name-with-dashes>-<YYYY-MM-DD>.pdf`
-    - Example: `resumes/System-Firmware-Engineer-2026-03-12.pdf`
-  - Convert spaces in the role name to dashes (`-`) so filenames are shell- and URL-friendly.
+  - Export the PDF using a **role-and-date-based basename**:
+    - Pattern basename: `<Role-With-Dashes>-YYYY-MM-DD.pdf`
+    - Example basename: `Validation-Engineer-1-2026-05-01.pdf`
+  - **Destination directory**:
+    - When the employer is known, resolve `<CompanyDir>` (e.g. `AMD`, `Wealthsimple`, `Capital One`, `Canonical`)—reuse an existing folder name when it already matches on disk.
+    - Create the folder if needed: **`mkdir -p resumes/<CompanyDir>`**, then save **`resumes/<CompanyDir>/<Role-With-Dashes>-YYYY-MM-DD.pdf`**.
+    - When the employer is **unknown**, save **`resumes/<Role-With-Dashes>-YYYY-MM-DD.pdf`** at the **repo root** `resumes/` level only (do not invent a company folder name).
+  - Convert spaces in the role portion to dashes (`-`) so filenames are shell- and URL-friendly.
 
 Verification pass and match scoring
 -----------------------------------
@@ -166,7 +179,7 @@ Verification pass and match scoring
   3) **Style and layout pass**
      - Confirm:
        - One-page output for this template.
-       - Max 3 projects and 2 bullets per project.
+       - Exactly 3 projects and at most 2 bullets per project.
        - Relevant Courses is a single line with 3–6 short course names.
        - Each bullet is 1–2 lines with at least one concrete outcome or scale detail where reasonable.
 - Compute a simple **match score (0–100)**:

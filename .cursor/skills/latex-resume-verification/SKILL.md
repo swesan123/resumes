@@ -31,11 +31,12 @@ description: Verifies a tailored LaTeX resume against a specific job posting usi
    - **Technical Skills**
      - Confirm that each listed skill is supported by at least one bullet in Experience, Projects, or Courses.
      - Flag any skills that are neither mentioned in bullets nor clearly implied by coursework.
+     - Confirm bold appears **only** on category labels (Languages, Systems, etc.), not on comma-separated technologies after each colon.
    - **Experience**
      - Check that at least one role strongly supports the top JD skills and responsibilities.
      - Ensure bullets follow guidelines: action + what changed + tech + outcome/metric, 1–2 lines, no brackets.
    - **Projects**
-     - Confirm there are at most 3 projects shown and each has at most 2 bullets.
+     - Confirm there are **exactly 3** projects shown and each has at most 2 bullets.
      - Check that chosen projects provide “proof” for important JD skills (e.g., Python, testing, automation, OS).
    - **Courses**
      - Confirm that `Relevant Courses` is rendered as a single `\item` line with 3–6 short course names.

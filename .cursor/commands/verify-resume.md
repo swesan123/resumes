@@ -18,7 +18,7 @@ Steps:
   - The most important job skills and responsibilities appear on the page (ideally in bullets).
   - Bolded skills only include technologies that appear in the job description (or clear synonyms).
   - Every skill listed in `Technical Skills` has “proof” in at least one bullet or course.
-  - The resume respects `resume_guidelines.txt` (1–2 line bullets, simple language, no brackets, one page, max 3 projects, single-line courses).
+  - The resume respects `resume_guidelines.txt` (1–2 line bullets, simple language, no brackets, one page, **exactly 3 projects**, Technical Skills with bold **only** on category labels, single-line courses).
 - Compute a **0–100 match score** based on skills coverage, responsibility coverage, and guideline compliance.
 - If the score is below ~85, suggest 3–5 targeted edits (and, when appropriate, apply small, safe fixes such as de-bolding noisy skills or trimming an extra bullet).
 
