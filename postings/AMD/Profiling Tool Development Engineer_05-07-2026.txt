@@ -1,0 +1,100 @@
+Profiling Tool Development Engineer
+Requisition Post Information* : Posted Date2 hours ago(5/7/2026 1:00 PM)
+Requisition ID 2026-80186 # of Openings (If multiple openings are needed, please create multiple requisitions) 1 Category (Portal Searching) Engineering Hiring Target Min CAD $132,000.00/Yr. Hiring Target Max CAD $198,000.00/Yr.
+WHAT YOU DO AT AMD CHANGES EVERYTHING 
+
+At AMD, our mission is to build great products that accelerate next-generation computing experiences—from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you’ll discover the real differentiator is our culture. We push the limits of innovation to solve the world’s most important challenges—striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.  Together, we advance your career.  
+
+Responsibilities
+THE ROLE:
+
+This is a position within the AI GPU Software Group (AGS) responsible for the AMD ROCm Profiling Tools. As a contributor to the success of AMD’s products, you will be part of a leading team to drive and improve AMD’s abilities to deliver the highest quality, industry-leading technologies to market.
+
+ 
+
+THE PERSON:
+
+We are seeking someone who is passionate about Software Development at AMD, creative on pushing boundary for tool development.  The successful candidate must be agile, able to learn, understand and write complex code within a fast paced environment.  The candidate is a strong communicator and can convey complex technical concepts to both technical and non-technical stakeholders. 
+
+  
+
+KEY RESPONSIBILITIES: 
+
+Work closely with profiling tools teams and open source code base
+Communicate and collaborate across many teams to coordinate feature across profiling tools stack
+Design, code, test and integrate features, enhancements and bug fixes into the profiling tools stack
+Define and implement abstraction layers for data handling.
+Refactor code bases to improve modularity and interoperability.
+Implement scalable data transfer solutions for multi-node distributed environments.
+Experience with production software quality assurance practices, methodologies, and procedures
+Excellent communication skills and experience working with global teams
+Able to adapt quickly to new code bases and contribute production level software to the profiling tools
+ PREFERRED EXPERIENCE: 
+
+Advanced C++ and Python Development background
+Experience in designing APIs and integrating them with large-scale applications.
+Experience with multi-threaded asynchronous codes, networking, client-server, and distributed models.
+Proficiency in using AI tools for enhanced productivity in code development.
+Experience with Databases.
+Experience with Linux, GitHub, Docker development environment.
+Effective communication and problem-solving skills 
+Familiarity with performance analysis tools and methods, is a plus
+ 
+
+ ACADEMIC CREDENTIALS: 
+
+Bachelor’s or Master's degree in Computer Science, Computer Engineering, Electrical Engineering, or equivalent 
+ 
+
+This role is not eligible for visa sponsorship.
+
+ 
+
+#LI-CJ3
+
+#LI-Hybrid
+
+Qualifications
+Benefits offered are described:  AMD benefits at a glance.
+
+ 
+
+AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law.   We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process.
+
+ 
+
+AMD may use Artificial Intelligence to help screen, assess or select applicants for this position.  AMD’s “Responsible AI Policy” is available here.
+
+ 
+
+This posting is for an existing vacancy.
+
+
+- This is apart of AGS which is responsble for rocm so defintiely mention ROCm. 
+
+
+-" Communicate and collaborate across many teams to coordinate feature across profiling tools stack" mention cooridnated with cross functional teams to coordinate feature enablement in MI systems. 
+
+- "Work closely with profiling tools teams and open source code base
+Communicate and collaborate across many teams to coordinate feature across profiling tools stack
+Design, code, test and integrate features, enhancements and bug fixes into the profiling tools stack
+Define and implement abstraction layers for data handling.
+Refactor code bases to improve modularity and interoperability.
+Implement scalable data transfer solutions for multi-node distributed environments.
+Experience with production software quality assurance practices, methodologies, and procedures" fits capstone project comment out old bullets and rewword the bullets to fit this. 
+
+- "Advanced C++ and Python Development background" I have c++ exposure intreacting with ROCm at AMD coop and python developement from various scripts and projects. 
+
+- "Experience in designing APIs and integrating them with large-scale applications." I have experience developing api for gym-app i made, Idk if i have it added to projects. 
+
+"Experience with multi-threaded asynchronous codes, networking, client-server, and distributed models." I have course work experience for this this would be "% SFWRENG 3BB4 – Software Design II: concurrent systems, Go, synchronization. and 4c03 networking" 
+
+"Proficiency in using AI tools for enhanced productivity in code development." Mention CURSOR, GitHub CoPilot in technical skills add under a AI tools category. 
+
+- "Experience with Databases" Databnses courses + project using databases with capstone and other projects/. 
+
+- "Experience with Linux, GitHub, Docker development environment." Extensive experience with these with amd experience and project
+
+- "Familiarity with performance analysis tools and methods, is a plus" 4E03 course talks about performance analysis so ik methods so. 
+
+- Make sure when you put the relveant courses. In the title be like Performance and Anyslsi tools and method, etc like direct wording from posting as the name. 

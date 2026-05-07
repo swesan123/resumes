@@ -1,0 +1,62 @@
+# Role: GPU Architecture Engineer - New College Grad 2026
+# Company: NVIDIA
+# Locations: Santa Clara CA, Austin TX, Durham NC (US)
+# Requisition: JR2014794
+# Date saved: 2026-05-06
+# Source: user-provided posting text
+
+GPU Architecture Engineer - New College Grad 2026
+Apply
+locations
+US, CA, Santa Clara
+US, TX, Austin
+US, NC, Durham
+time type
+Full time
+posted on
+Posted 30+ Days Ago
+job requisition id
+JR2014794
+Today, NVIDIA is tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what's never been done before takes vision, innovation, and the world's best talent. As an NVIDIAN, you'll be immersed in a diverse, encouraging environment where everyone is inspired to do their best work. Come join the team and see how we can make a lasting impact on the world.
+
+NVIDIA's invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing — with the GPU acting as the brain of computers, robots, and self-driving cars that can perceive and understand the world. Today, we are increasingly known as "the AI computing company." We're looking to grow our company, and build our teams with the smartest people in the world. Join us at the forefront of technological advancement. In this position, you'll be responsible for developing and enhancing various features in the GPU architecture.
+
+What you will be doing:
+
+Contribute to advancing GPU Architecture Simulators, GPU testing infrastructure and metrics.
+
+Understand and model in C++ and python, features for future GPU graphics and parallel processing architectures.
+
+Develop test plans and testing infrastructure.
+
+Debug tests on architecture simulators.
+
+Develop tools to validate performance models and verify functional models.
+
+What we need to see:
+
+Pursuing or recently completed an MS or PhD (or equivalent experience) in CS, EE, math or related discipline.
+
+Strong programming ability in C, C++, and Python.
+
+Deep knowledge of computer architecture and parallel programming.
+
+Ways to stand out from the crowd:
+
+Experience in machine learning/deep learning and/or graphics algorithms, and/or signal processing.
+
+Prior architecture experience.
+
+Programming in CUDA and/or DX and Vulkan.
+
+NVIDIA is widely considered to be one of the technology world's most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative and autonomous, we want to hear from you!
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 124,000 USD - 195,500 USD for Level 2, and 152,000 USD - 241,500 USD for Level 3.
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until April 4, 2026.
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.

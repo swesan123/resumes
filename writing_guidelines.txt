@@ -1,0 +1,375 @@
+# SOFTWARE RESUME WRITING GUIDELINES
+
+## OVERALL GOAL
+The resume should sound:
+- Technical
+- Concise
+- Impact-focused
+- Engineering-oriented
+- Results-driven
+- Confident but factual
+
+The resume should NOT sound:
+- Fluffy
+- Generic
+- Passive
+- Overly academic
+- Like a job description
+- Like AI-generated corporate jargon
+
+The writing style should prioritize:
+1. Technical specificity
+2. Ownership
+3. Measurable impact
+4. Clear engineering contributions
+5. Fast readability
+
+The reader should quickly understand:
+- What was built
+- What technologies were used
+- What engineering problems were solved
+- What impact was created
+- What level of ownership existed
+
+--------------------------------------------------
+SECTION 1 — WRITING STYLE
+--------------------------------------------------
+
+## Use concise engineering language
+
+GOOD:
+- Developed Python automation tooling for GPU validation workflows.
+- Diagnosed platform-level failures using Linux system logs and RAS injections.
+- Built REST APIs using Node.js, PostgreSQL, and TypeScript.
+
+BAD:
+- Responsible for helping with automation tasks.
+- Worked on backend systems.
+- Assisted the team with debugging.
+
+--------------------------------------------------
+
+## Resume bullets should follow this structure:
+
+[ACTION VERB] + [TECHNICAL WORK] + [TOOLS/STACK] + [IMPACT]
+
+Examples:
+- Automated repetitive validation workflows using Python, reducing manual debugging effort during GPU bring-up.
+- Built a React Native ridesharing application with Stripe Connect integration for automated split-fare payments.
+- Configured KVM/QEMU virtualization environments for platform validation testing on Linux systems.
+
+--------------------------------------------------
+
+## Prioritize ACTION + IMPACT
+
+Bullets should emphasize:
+- What engineering work was performed
+- What problem was solved
+- What improved because of the work
+
+Avoid describing tasks without outcomes.
+
+BAD:
+- Attended debugging meetings.
+
+GOOD:
+- Facilitated weekly debugging discussions to improve issue triage efficiency across validation teams.
+
+--------------------------------------------------
+SECTION 2 — ACTION VERBS
+--------------------------------------------------
+
+## Preferred action verbs
+
+Use strong engineering verbs such as:
+- Built
+- Developed
+- Designed
+- Engineered
+- Automated
+- Optimized
+- Diagnosed
+- Implemented
+- Led
+- Architected
+- Configured
+- Streamlined
+- Integrated
+- Improved
+- Reduced
+- Validated
+- Spearheaded
+- Initiated
+- Deployed
+- Refactored
+- Created
+- Enhanced
+- Investigated
+
+Avoid weak verbs such as:
+- Helped
+- Assisted
+- Worked on
+- Participated in
+- Responsible for
+- Involved with
+
+--------------------------------------------------
+SECTION 3 — TECHNICAL SPECIFICITY
+--------------------------------------------------
+
+## Always mention technologies explicitly
+
+GOOD:
+- Built backend APIs using Node.js, Hono, tRPC, PostgreSQL, and Drizzle ORM.
+
+BAD:
+- Built backend services.
+
+GOOD:
+- Performed GPU validation and debugging using Linux logs, conductor diagnostics, and RAS injection testing.
+
+BAD:
+- Tested hardware systems.
+
+The resume should clearly expose:
+- Languages
+- Frameworks
+- Infrastructure
+- Databases
+- Operating systems
+- Protocols
+- Platforms
+- Tools
+
+--------------------------------------------------
+SECTION 4 — OWNERSHIP LANGUAGE
+--------------------------------------------------
+
+## Emphasize ownership and initiative
+
+Strong resumes communicate:
+- Leadership
+- Initiative
+- Responsibility
+- Technical ownership
+
+GOOD:
+- Led validation efforts for AMD MI350X GPU bring-up.
+- Initiated weekly automation improvement discussions across engineering teams.
+- Owned recurring trip scheduling architecture for mobile ridesharing platform.
+
+BAD:
+- Took part in bring-up activities.
+- Joined team meetings.
+
+--------------------------------------------------
+SECTION 5 — QUANTIFICATION
+--------------------------------------------------
+
+## Use metrics whenever possible
+
+Good metrics include:
+- Time saved
+- Automation coverage
+- Performance improvements
+- Reduced debugging effort
+- User counts
+- Test counts
+- Reliability improvements
+- Workflow acceleration
+- Latency reductions
+- Deployment frequency
+- System scale
+
+GOOD:
+- Reduced repetitive validation effort by automating GPU testing workflows in Python.
+- Developed testing infrastructure supporting 247 automated test cases with 82% coverage.
+- Streamlined debugging workflows across Linux-based validation systems.
+
+DO NOT:
+- Invent fake numbers
+- Exaggerate impact
+- Use meaningless percentages
+
+Metrics should be:
+- Honest
+- Reasonable
+- Engineering-relevant
+
+--------------------------------------------------
+SECTION 6 — SOFTWARE ENGINEERING STYLE
+--------------------------------------------------
+
+## Bullets should sound engineering-oriented
+
+GOOD:
+- Implemented React Native trip-booking flows integrated with Stripe Connect and backend APIs.
+
+BAD:
+- Created app screens.
+
+GOOD:
+- Diagnosed hardware/software integration issues across Linux-based GPU validation platforms.
+
+BAD:
+- Fixed bugs.
+
+GOOD:
+- Developed Python tooling to automate repetitive validation tasks and improve debugging efficiency.
+
+BAD:
+- Used Python scripts.
+
+--------------------------------------------------
+SECTION 7 — ATS OPTIMIZATION
+--------------------------------------------------
+
+## Resume must be ATS-friendly
+
+Requirements:
+- Use standard section names
+- Include technologies explicitly
+- Mirror keywords from job descriptions
+- Avoid fancy formatting
+- Avoid tables/graphics
+- Avoid excessive icons/emojis
+
+Preferred sections:
+- Experience
+- Projects
+- Skills
+- Education
+- Technical Skills
+
+--------------------------------------------------
+SECTION 8 — TONE
+--------------------------------------------------
+
+## Tone should be:
+
+- Confident
+- Technical
+- Direct
+- Efficient
+- Professional
+
+NOT:
+- Overly formal
+- Conversational
+- Buzzword-heavy
+- Marketing-style
+- Overly enthusiastic
+
+Avoid:
+- "Passionate"
+- "Hardworking"
+- "Team player"
+- "Fast learner"
+
+Instead SHOW those traits through accomplishments.
+
+--------------------------------------------------
+SECTION 9 — BULLET QUALITY RULES
+--------------------------------------------------
+
+## Every bullet should ideally answer:
+1. What was built/done?
+2. What technologies were used?
+3. What engineering problem was solved?
+4. What impact/result occurred?
+
+If a bullet cannot answer at least 2-3 of these clearly, improve it.
+
+--------------------------------------------------
+SECTION 10 — PROJECT WRITING STYLE
+--------------------------------------------------
+
+## Projects should emphasize:
+- Technical architecture
+- Engineering complexity
+- Real-world usefulness
+- Ownership
+- Scale/features
+- Systems thinking
+
+GOOD:
+- Built a campus ridesharing platform using React Native, TypeScript, PostgreSQL, and Stripe Connect with verified university-only authentication.
+
+GOOD:
+- Designed recurring trip scheduling architecture supporting automated future ride generation.
+
+BAD:
+- Created a school project app.
+
+--------------------------------------------------
+SECTION 11 — HARDWARE/SYSTEMS ENGINEERING STYLE
+--------------------------------------------------
+
+## For systems/hardware roles, emphasize:
+- Debugging
+- Validation
+- Diagnostics
+- Automation
+- Infrastructure
+- Platform-level understanding
+- Linux environments
+- Hardware/software interaction
+- Root-cause analysis
+
+GOOD:
+- Investigated platform-level GPU failures using Linux system logs, hardware diagnostics, and RAS injection testing.
+
+GOOD:
+- Configured virtualization environments using KVM/QEMU and Hyper-V across Linux and Windows systems.
+
+--------------------------------------------------
+SECTION 12 — FORMATTING RULES
+--------------------------------------------------
+
+## Resume formatting principles:
+- Keep bullets short and dense
+- Avoid paragraphs
+- Prefer 1-2 line bullets
+- Prioritize readability
+- Most impressive information should appear early
+- Avoid repetition
+- Avoid redundant technologies across every bullet unless necessary
+
+--------------------------------------------------
+SECTION 13 — AI WRITING RESTRICTIONS
+--------------------------------------------------
+
+## Avoid obvious AI writing patterns
+
+DO NOT:
+- Overuse buzzwords
+- Write generic corporate phrasing
+- Use repetitive sentence structures
+- Add fluff for length
+- Write long introductions
+- Over-explain simple technologies
+
+Avoid phrases like:
+- "Leveraged cutting-edge technologies"
+- "Results-driven professional"
+- "Dynamic self-starter"
+- "Synergized cross-functional initiatives"
+
+Prefer direct technical statements instead.
+
+--------------------------------------------------
+SECTION 14 — FINAL QUALITY CHECK
+--------------------------------------------------
+
+Before finalizing any resume bullet:
+- Is it technically specific?
+- Does it sound like engineering work?
+- Does it communicate impact?
+- Does it avoid fluff?
+- Does it show ownership?
+- Is it concise?
+- Is it believable?
+- Would a technical recruiter understand the contribution quickly?
+
+If not, rewrite it.

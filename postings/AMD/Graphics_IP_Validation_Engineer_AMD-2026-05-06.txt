@@ -1,0 +1,103 @@
+# Role: Graphics IP Validation Engineer
+# Company: AMD Inc. (contract via Cynet / TAPFIN, RTR)
+# Location: Markham, Ontario — Onsite
+# Job Posting Number: 348-1
+# Rate note (RTR): $50/hr on T4, 12 months, First Shift
+# Date saved: 2026-05-06
+# Source: user-provided RTR email from Cynet Systems (Veer Singh)
+
+Graphics IP Validation Engineer — AMD (Markham, ON) — RTR summary
+
+Candidate: Swesan Pathmanathan
+Prior AMD (per RTR): Managers Frankie Cheung and Melissa Lam; Canada.
+
+Client: AMD INC.
+Job Title: Graphics IP Validation Engineer
+Duration: 12 months
+Job Location: Markham, ON - Onsite
+Job Posting Number: 348-1
+
+THE ROLE:
+
+AMD is looking for a lead systems integration engineer to provide thought leadership and subject matter expertise to our growing team. As a key contributor, you will have a strong technical background to contribute to all aspects of the post-silicon development process.
+
+The AMD S3 Business Unit IP Systems Engineering team is seeking an energetic, dynamic, experienced IP Systems Engineer to join our growing team. We work with customers to develop new products, previously including game consoles. As an IP Systems Engineer, you will drive the planning, pre-silicon execution, validation, silicon bring-up and debug of AMD processor and graphics based systems while working closely with internal teams to meet product development milestones.
+
+As a key contributor to the success of AMD's IP, you will be part of a leading team that drives and enhances AMD's abilities to deliver industry leading technologies to our customers. The Systems Engineering team encourages technical innovation to showcase successes, provides opportunities to develop technical knowledge, and facilitates career development.
+
+This role specifically focuses on driving the planning, validation, silicon bring-up and debug of AMD graphics IP and related systems. There is a need for excellent collaboration, working across team boundaries and geographical locations. This role also requires a broad knowledge of the system design lifecycle, spanning across pre-silicon into post-silicon validation.
+
+THE PERSON:
+
+You are a highly motivated hands-on leader with a strong development background, problem solving mentality, excellent communication skills, ability to prioritize tasks along with willingness to learn and adapt. Excellent teamwork skills and capability to lead a highly technical team is crucial.
+
+KEY RESPONSIBILITIES:
+
+• Participate in systems design development throughout entire product lifecycle, from pre-silicon and emulation through post-silicon and software integration
+• Lead technical presentations demonstrating a good understanding of hardware architecture and expertise in systems design
+• Collaborate with Design, Software, Tools and other teams to drive the definition of testing and debug methodologies to provide the best possible coverage and customer experience for the AMD IP
+• Work with Program Leadership team to define the end to end plan and highlight possible risk areas and address concerns during planning
+• Be a leader and mentor to the operation team; be hands-on and lead by example
+• Isolation and debug of issues found in Graphics IP during pre-silicon, bring-up, validation, and production phases of S3 products
+• Able to proactively support team culture that fosters knowledge sharing, excellence, and collaboration
+• Defining and executing validation strategies, enablement of features and unit test plans
+• Publishing and aligning test plan requirements and dependencies
+• Working closely with supporting teams such as design, diagnostics, driver, and project leadership
+• Lead cross-functional technical discussions to drive root cause identification and resolution on technical issues
+• Driving and participating in technical innovations to enhance AMD's validation capabilities including tool and script developments, technical and methodology enhancements
+
+REQUIREMENTS:
+
+• In-depth knowledge of SOC architecture and concepts
+• In-depth knowledge of Graphics hardware pipeline
+• Experience with graphics engines and rendering software pipelines
+• Experience with FPGA and other hardware emulation platforms for pre-silicon debug
+• Strong understanding of BIOS, OS, and driver-level interactions and common failure points
+• Good understanding of Boot Flows/Sequences
+• Strong programming/scripting skills (eg. Python, C/C++, Ruby)
+• Experience with IP/System level bring-up, SOC debug techniques and methodologies
+• Experience with common lab equipment, computer hardware, and networks
+• Led process improvement initiatives to improve engineering quality
+• Strong technical leadership and mentoring skills
+• Knowledge of standard power management features and use-cases
+
+PREFERRED EXPERIENCE:
+
+• 2-4 years of relevant experience in pre and post-silicon validation of the relevant IP and 3-6 years experience in semiconductor industry
+• Personal passion for computer gaming and driving game performance goals
+• Demonstrated ability to grasp new technical concepts quickly
+• Experience with IP/System level bring-up, SOC debug techniques and methodologies
+• Strong understanding of BIOS, OS, and driver-level interactions and common failure points
+• Strong analytical/problem solving skills and pronounced attention to details
+• Excellent written and verbal communication skills
+• Self-starter, strong collaborator, and able to independently drive tasks to completion
+• Strong organizational skills and ability to handle multiple issues at the same time
+
+ACADEMIC CREDENTIALS:
+
+• Bachelor's/Master's degree in Computer Engineering, Electrical Engineering or related field strongly preferred
+
+Assets:
+
+• Strong understanding of BIOS, OS, and driver-level interactions and common failure points
+• In-depth knowledge of SOC architecture and concepts
+• Experience with common lab equipment, computer hardware, and networks
+• Experience in pre-silicon emulation and debug
+• Led process improvement initiatives to improve engineering quality
+• Strong technical leadership and mentoring skills
+• Knowledge of Graphics IP power management features
+
+Education:
+
+Bachelor, Master's degree in Electrical Computer Engineering, or related degrees
+
+Comments for Suppliers — Graphics System Silicon Validation Design Engineer:
+
+• FPGA and other hardware emulation platforms for pre-silicon debug
+• Knowledge of GPU hardware architecture
+• Knowledge of graphics rendering pipeline
+• Familiarity with power management and power states
+• Strong programming/scripting skills (eg. Python, C/C++, Ruby)
+• Systems design development throughout entire product lifecycle, from pre-silicon and emulation through post-silicon and software integration
+• Hardware architecture and expertise in systems design
+• Isolation and debug of issues found in Graphics IP during pre-silicon, bring-up, validation, and production phases

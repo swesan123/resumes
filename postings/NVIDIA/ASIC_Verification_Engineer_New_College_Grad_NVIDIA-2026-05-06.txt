@@ -1,0 +1,68 @@
+# ASIC Verification Engineer - New College Grad 2026
+# NVIDIA
+# Saved: 2026-05-06
+# Source: user-provided posting text
+
+ASIC Verification Engineer - New College Grad 2026
+Apply
+locations
+US, TX, Austin
+US, CA, Santa Clara
+time type
+Full time
+posted on
+Posted 12 Days Ago
+job requisition id
+JR2012573
+Today, NVIDIA is tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what's never been done before takes vision, innovation, and the world's best talent. As an NVIDIAN, you'll be immersed in a diverse, encouraging environment where everyone is inspired to do their best work. Come join the team and see how we can make a lasting impact on the world!
+
+NVIDIA is seeking an outstanding ASIC Verification Engineer to verify the design and implementation of the world's leading SoC's and GPU's. This position offers the opportunity to have a real impact in a dynamic, technology-focused company impacting product lines ranging from consumer graphics to self-driving cars and the growing field of artificial intelligence. We have crafted a team of extraordinary people stretching around the globe, whose mission is to push the frontiers of what is possible today and define the platform for the future of computing!
+
+
+What you'll be doing:
+
+As a Verification Engineer at NVIDIA, you will be responsible for verifying the design, architecture and micro-architecture using advanced verification methodologies
+
+Define the verification scope, and contribute to the development of the verification infrastructure for memory subsystem units
+
+Verify firmware code, with specific attention on verifying hardware/firmware interactions
+
+Collaborate with architects, designers, software engineers across sites to accomplish your goals
+
+What we need to see:
+
+Pursuing or recently completed a BS, MS or PhD in Electrical Engineering, Computer Engineering, Computer Science  or equivalent experience.
+
+Knowledgable in verification methodology, creating reusable verification components.
+
+Knowledgeable in verification using random stimulus along with functional coverage and assertion-based verification methodologies.
+
+Proficiency in Object Oriented Programming with SystemVerilog.
+
+Exposure to design and verification tools (VCS or equivalent simulation tools, debug tools like Debussy, GDB), and methodologies (UVM or equivalent).
+
+Your work displays a passion for debugging and strong problem solving skills.
+
+Ways to stand out from the crowd:
+
+Prior verification experience related to high speed IO protocols, or memory coherence is a big plus
+
+Experience debugging embedded firmware code (C or RISCV Assembly)
+
+Knowledgeable in embedded microcontrollers and/or RISCV Architecture
+
+Experience writing verification plans
+
+Strong verification mindset and intuition
+
+NVIDIA is widely considered to be one of the technology world's most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. Are you creative and autonomous? Do you love a challenge? If so, we want to hear from you.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 100,000 USD - 166,750 USD for Level 1, and 116,000 USD - 189,750 USD for Level 2.
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until April 28, 2026.
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.

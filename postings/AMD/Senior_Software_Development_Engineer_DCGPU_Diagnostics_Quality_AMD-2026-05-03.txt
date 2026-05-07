@@ -1,0 +1,153 @@
+# Role: Senior Software Development Engineer - DCGPU Diagnostics Quality Team
+# Company: AMD (Advanced Micro Devices)
+# Location: Markham, ON
+# Date saved: 2026-05-03
+# Source: user-provided posting text
+
+Senior Software Development Engineer - DCGPU Diagnostics Quality Team
+Requisition Post Information* : Posted Date6 days ago(4/27/2026 11:59 AM)
+Requisition ID 2026-85416 # of Openings (If multiple openings are needed, please create multiple requisitions) 1 Category (Portal Searching) Engineering Hiring Target Min CAD $106,400.00/Yr. Hiring Target Max CAD $159,600.00/Yr.
+WHAT YOU DO AT AMD CHANGES EVERYTHING 
+
+At AMD, our mission is to build great products that accelerate next-generation computing experiences—from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you'll discover the real differentiator is our culture. We push the limits of innovation to solve the world's most important challenges—striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.  Together, we advance your career.  
+
+Responsibilities
+ 
+
+ 
+
+THE ROLE: 
+
+Support development and deployment of diagnostic tests that validate AMD Data Center GPU products at all test stages, from silicon screening to server rack assembly.
+
+ 
+
+KEY RESPONSIBILITIES: 
+
+Test Development (60%):
+
+- Design and implement diagnostic tests for AMD silicon and server platforms
+
+- Develop test automation frameworks and infrastructure
+
+- Debug test failures and hardware issues across production stages
+
+- Optimize test coverage and execution time
+
+ 
+
+Cross-Team Coordination (40%):
+
+- Lead root cause analysis and debug efforts for failures on production systems, often in time-sensitive and urgent scenarios
+
+- Interface with silicon design, firmware, performance, systems integration, and manufacturing teams to investigate and resolve issues
+
+- Support manufacturing partners in test bring-up and issue resolution
+
+- Coordinate test deployment schedules and deliverables
+
+- Track and report on test coverage, quality metrics, and production readiness
+
+ 
+
+Additional Duties:
+
+- Participate in code reviews and maintain test code quality
+
+- Document test specifications and deployment procedures
+
+- Occasional lab work and limited factory visits as needed
+
+ 
+
+PREFERRED EXPERIENCE: 
+- Proven experience with software development or test engineering experience
+
+- Proven experience with hardware/silicon validation or manufacturing test environments
+
+- Hands-on debugging and root cause analysis in low-level hardware/software systems
+
+- Experience with server or datacenter systems architecture
+
+ 
+
+Domain Knowledge:
+
+- Understanding of silicon validation processes and test methodologies
+
+- Familiarity with manufacturing workflows and production test environments
+
+- Knowledge of server architectures (BMC, firmware, system integration)
+
+- Experience with GPU/accelerator performance metrics including computational throughput, memory bandwidth, power efficiency, thermal characteristics, and whole-system performance
+
+- Background in AMD GPU or CPU technologies is a plus
+
+ 
+
+Technical Skills:
+
+- Strong proficiency in Python and C++
+
+- SQL and Snowflake for data analysis and reporting
+
+- Linux system administration and shell scripting
+
+- Git version control and code review practices
+
+- Experience with diagnostic tools and hardware debugging methodologies
+
+- Knowledge of at least one GPU programming framework (ROCm/CUDA/OpenCL/Vulkan/OpenGL), with ROCm strongly preferred
+
+ 
+
+Communication:
+
+- Excellent written and verbal communication skills is an absolute
+
+- Ability to document technical designs, test plans, and procedures clearly
+
+- Proven ability to coordinate with cross-functional teams
+
+ 
+
+ACADEMIC CREDENTIALS: 
+
+- BS in Computer Science, Computer Engineering, Electrical Engineering, or related field preferred
+
+- Equivalent experience considered
+
+ 
+
+LOCATION:
+
+Markham, ON
+
+ 
+
+This role is not eligible for visa sponsorship
+
+ 
+
+#LI-AJ1
+
+#LI-HYBRID
+
+AJ6
+
+ 
+
+Qualifications
+Benefits offered are described:  AMD benefits at a glance.
+
+ 
+
+AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law.   We encourage applications from all qualified candidates and will accommodate applicants' needs under the respective laws throughout all stages of the recruitment and selection process.
+
+ 
+
+AMD may use Artificial Intelligence to help screen, assess or select applicants for this position.  AMD's "Responsible AI Policy" is available here.
+
+ 
+
+This posting is for an existing vacancy.

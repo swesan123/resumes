@@ -30,6 +30,7 @@ Impact and metrics
   - Reliability: error-rate reduction, incident frequency, uptime/SLA improvements.
   - Scale: number of users, requests per day, size of datasets, number of services.
   - Business: revenue, cost savings, churn reduction, conversion or activation rate.
+- For **percent or time-based claims**, add a short **because** clause (mechanism, scope, before/after behavior, or qualification) so the number is credible in screening and interviews. You may **bold** headline quantities (e.g. **100+ runs weekly**, **about 20 minutes to under 5 minutes**) when the layout stays balanced and the figure is defensible.
 - Example transformations:
   - Weak: "Improved API performance."
   - Strong: "Optimized Node.js REST APIs and PostgreSQL queries, cutting P95 latency from 900ms to 320ms (64% faster) for 120k+ daily requests."
@@ -114,14 +115,20 @@ Single-page layout, sections, and skills alignment
   - Derive the skills list **from the active sections** (current projects/experience shown), not from your entire background.
   - When tailoring, prefer **commenting out** unused skills over adding new bullets just to justify them.
   - **Formatting**: Bold **only** the category labels in each line (e.g. `\textbf{Languages}{: Python, C}`). Do **not** bold individual tools or languages after the colon—keep post-colon lists unbolded for a clean scan pattern.
+  - **Naming hygiene**: Merge close synonyms when they tell one story on the resume (e.g. **`BIOS/UEFI`** rather than separate **BIOS** and **UEFI** tokens). Keep **umbrella** nouns such as **firmware** in **bullets** unless the role needs them as a concise, proven skill row.
+  - List **tools/platforms/domains** in Technical Skills; put **how you executed the role** (out-of-band bring-up, integration campaigns, customer rack configs) primarily in **experience bullets**. When you remove a skill from `skills.tex`, remove the matching token from the employer **keyword pipe** in the same tailoring pass unless you add new proof.
 - For company or project headings that include a skill list (e.g., `Company | \\textbf{Python}, \\textbf{Linux}`):
   - Ensure each bolded technology also appears in the bullets for that entry.
   - Do **not** bold tools that are not clearly supported by the underlying work.
+- Employer **keyword pipe** (when the template splits company vs keyword tail, e.g. `\\resumeSubheadingProminent` in `config/commands.tex`):
+  - Keep the list **technology- and domain-heavy** (languages, OSes, stacks, validation axes)—aligned with **Technical Skills** order when practical.
+  - Do **not** use the pipe for vague soft-skill slogans; put stakeholder coordination, documentation wins, and similar themes in **experience bullets** unless you explicitly choose otherwise.
+  - After changing heading macros, **compile** and eliminate serious **`Overfull \\hbox`** issues on heading rows; if you change a macro’s **argument count**, update **every** call site in the same edit.
 
 Projects and courses
 --------------------
 - Projects:
-  - For a given job, show **exactly 3 projects** (minimum 3, maximum 3), chosen to best match the posting’s core skills and domains.
+  - For a given job, show **exactly 3 projects** (minimum 3, maximum 3) unless the user explicitly requests a different count; choose projects to best match the posting’s core skills and domains.
   - Keep each project to **2 bullets** focused on what you built, how you tested it, and any scale/metrics.
   - Prefer projects that provide **“proof”** for the most important skills in the job description.
   - When a project heading includes a tech stack (e.g., `Project | Python, Docker, PostgreSQL`):
@@ -148,7 +155,7 @@ Practical one-page heuristics for this LaTeX template
 Saving postings and compiling role-specific resumes
 ----------------------------------------------------
 - When tailoring against a job description (paste or fetched URL):
-  - Persist the **full posting text** under `postings/` as a **new** dated `.txt` file (see `.cursor/skills/latex-resume-tailoring/SKILL.md` for `<role>_<company>-YYYY-MM-DD.txt` slugs and optional `#` metadata headers).
+  - Persist the **full posting text** under `postings/<CompanyDir>/` when the employer is known, or under `postings/` at repo root when unknown, as a **new** dated `.txt` file (see `.cursor/skills/latex-resume-tailoring/SKILL.md` for `<role>_<company>-YYYY-MM-DD.txt` slugs and optional `#` metadata headers).
   - Do **not** overwrite an existing `postings/*.txt` unless the user explicitly asks.
 - After tailoring (and optional verification) for a specific company/role:
   - Compile `main.tex` to produce an updated `main.pdf`.
@@ -182,6 +189,7 @@ Verification pass and match scoring
        - Exactly 3 projects and at most 2 bullets per project.
        - Relevant Courses is a single line with 3–6 short course names.
        - Each bullet is 1–2 lines with at least one concrete outcome or scale detail where reasonable.
+       - No LaTeX compile **errors**; heading rows do not show severe **`Overfull \\hbox`** warnings; custom macros in `config/commands.tex` match their **call-site arity**.
 - Compute a simple **match score (0–100)**:
   - Example breakdown:
     - 40 points: coverage of top JD skills/keywords.
@@ -195,10 +203,12 @@ Verification pass and match scoring
 Missing skills tracking
 -----------------------
 - To decide what to learn next, maintain a simple skill counter in `missing_skills.txt`:
-  - When verifying against a job posting, build the set of **important JD skills/keywords**.
-  - For each such skill that does **not** appear in your current one-page resume (Experience, Projects, Courses, Technical Skills):
-    - Add it to `missing_skills.txt` or increment its count if it already exists.
-  - Do **not** add skills that you already know and simply chose not to highlight for this job.
+  - **Automated upkeep:** whenever an agent completes `/tailor-resume`, it MUST update `missing_skills.txt` per `.cursor/skills/latex-resume-tailoring/SKILL.md` → step **10** (increment or append a line per missing-but-important JD skill that still lacks honest proof after tailoring).
+  - When verifying outside that flow against a posting, apply the **same incremental rules**.
+  - For each JD skill/tool/domain that matters for the role but **does not** honestly appear anywhere on your one-page resume (Experience, Projects, Courses, Technical Skills, truthful employer keywords):
+    - Increment its counter or add **`Name: 1`**.
+  - Per posting, bump each missing skill **at most once**.
+  - Do **not** add skills that already have resume proof yet were intentionally de-emphasized.
 - Over time, use the highest-count entries in `missing_skills.txt` as a priority list for:
   - What technologies or domains to study.
   - Which kinds of projects or coursework to seek out to close the gaps.

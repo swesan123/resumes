@@ -1,19 +1,29 @@
-# Missing skills tracker
+# Missing skills tracker (aggregated ledger)
 #
 # Purpose:
-# - Track which skills are missing from your resume for each job posting.
-# - Use the aggregated counts to decide what to learn or deepen next.
+#   Count how often you tailor toward roles that NEED a capability you still lack honest proof for.
 #
-# Format (one per line):
-# <skill_name>: <count>
+# Ledger format — one canonical entry per non-comment line:
+#   <canonical skill phrase>: <non-negative integer>
 #
-# Example:
-# React: 3
-# AWS: 2
-# Kotlin: 1
+# Maintainer rules — see `.cursor/skills/latex-resume-tailoring/SKILL.md` step 10 and `resume_guidelines.txt`:
+#   - Agents increment +1 each tailored posting per missing JD-important skill lacking honest proof afterward.
+#   - Keep alphabetical order by `<canonical skill phrase>` (case-insensitive).
+#   - Merge synonyms on one row when feasible (e.g. Verdi-class debug tools).
 #
-# Usage:
-# - When verifying a resume against a job description, if an important skill
-#   appears in the JD but not in your current resume (experience, projects,
-#   courses, or skills), increment its count here instead of editing history.
+# Seeds below summarize gaps called out recently for NVIDIA postings (baseline before future increments).
 
+Assertion-based verification (SVA): 2
+Debussy or Verdi-class simulation waveform debug tools: 2
+Embedded firmware debug (GDB, C, RISC-V assembly familiarity): 1
+Formal low-power tooling (Cadence Incisive LP, Synopsys VCS NLP): 2
+Functional coverage with constrained-random stimulus: 2
+GPU memory coherence / high-speed IO protocol verification RTL: 1
+Multi-node distributed data transfer solutions: 1
+Multi-VT clock gating / power gating / DVFS UPF-centric flows: 1
+Open-source profiling tools codebase contributions: 1
+Standalone verification or test-plan authorship for DV: 2
+Synopsys VCS or Cadence Incisive class simulators product flow: 2
+SystemVerilog OOP for layered verification constructs: 2
+UPF power intent specification: 1
+UVM (or reusable verification methodology equivalents): 2

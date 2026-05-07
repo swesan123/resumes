@@ -24,10 +24,11 @@ Use this skill when:
 
 2. **Persist the posting** (`postings/`)
    - Save the **full job description text** you tailored against as a new file under `postings/` (do **not** overwrite existing postings unless the user asks—if the same role and date already exist, reuse that path and mention it in the summary).
-   - **Filename pattern**: `<short-role-slug>_<company-slug>-YYYY-MM-DD.txt`
+   - **Directory layout**: When the employer is known, save under **`postings/<CompanyDir>/`** using a stable company slug (e.g. `AMD`, `NVIDIA`, `Canonical`, matching `resumes/<CompanyDir>/` when practical). When the employer cannot be determined reliably, save at **`postings/`** repo root next to other unknown-company files.
+   - **Filename pattern**: `<short-role-slug>_<company-slug>-YYYY-MM-DD.txt` (same basename whether nested or flat)
      - Slugs: ASCII, spaces → underscores, strip unsafe punctuation (keep readability).
      - If company is unknown, omit `_<company-slug>` (still include date).
-     - Examples (conceptually): `Graphics_IP_Validation_Engineer_AMD-2026-03-18.txt`, `Validation_Engineer_1_AMD-2026-05-01.txt`.
+     - Examples (conceptually): `postings/AMD/Graphics_IP_Validation_Engineer_AMD-2026-03-18.txt`, `postings/NVIDIA/Hardware_Applications_Engineer_New_College_Grad_NVIDIA-2026-05-04.txt`.
    - Put **optional metadata** at the top as comments (lines starting with `#`): role title, company, source URL if known, date saved.
 
 3. **Load project canon**
@@ -60,8 +61,19 @@ Use this skill when:
      - **Bolding**: In the Technical Skills block, bold **only** the category labels (e.g. `\textbf{Languages}{: Python, C}`). Do **not** bold individual technologies after the colon—lists stay plain text for consistency.
      - **Dedupe and naming**: Do not list synonymous pillars twice (e.g. **RAS** already implies reset-related validation—drop redundant “resets” unless the candidate insists both appear). Use **consistent Title Case** for named validation axes when they read as formal domains (e.g. Performance, System Management) and align the same terms in Experience bullets where those axes appear.
      - **Row budget**: Extra skill rows often trigger **page overflow** before bullets do. After substantive skills edits, **compile**; if the PDF exceeds one page, merge related tokens onto one row (e.g. stack libraries under an existing category) or trim bullets—avoid silently shipping two pages.
+   - **Skills vs. responsibilities (repo feedback)**:
+     - List **repeatable technologies, platforms, and domains** under Technical Skills only when at least one **Experience, Project, or Courses** line proves them.
+     - Describe **how work was done** (e.g. out-of-band consoles, integration bring-up, customer rack configs) in **bullets**; do not treat those phrases as interchangeable “skill tags” unless the candidate keeps them as proof-backed tokens. If removed from `skills.tex`, remove matching tokens from the employer **keyword pipe** (or add honest proof in the same pass).
+     - **Merge synonyms on the page**: e.g. use **`BIOS/UEFI`** instead of separate **BIOS** and **UEFI** when they represent the same resume story; align the same token in bullets and in `\resumeSubheadingProminent` when both appear.
+     - **Umbrella nouns** (e.g. “firmware” as a category): prefer mentioning firmware **inside bullets** (flash, GPU firmware, triage). Add **firmware** as a comma-separated skill only if it is consistently proven and not redundant with **BIOS/UEFI** rows.
+   - **Metrics in bullets (repo feedback)**:
+     - When the resume includes **counts, time ranges, or percentages**, **bold the headline metric** if the layout still looks balanced (e.g. **100+ runs weekly**, **about 20 minutes to under 5 minutes**).
+     - Pair **percent or time-save claims** with a short **because** clause (mechanism, scope, or before/after behavior) so recruiters and hiring managers can see why the number is credible—do **not** invent metrics; when the candidate only has a qualitative win, keep prose only.
+   - **Bullet clarity (repo feedback)**:
+     - Write so a **non-specialist recruiter** can follow the first half of the line, while **JD keywords** remain visible for a technical reader.
+     - Avoid **two experience bullets** that repeat the same OS list and the same validation-pillar list—split **test orchestration / ownership** from **platform imaging / BMC / BIOS** (or similar) so each line has a distinct job.
    - **Projects**:
-     - Always enable **exactly 3 projects** (minimum **3**, maximum **3**): pick the three best matches for the posting.
+     - Enable **exactly 3 projects** (minimum **3**, maximum **3**): pick the three best matches for the posting unless the user explicitly requests four.
      - Comment out other `\input{sections/projects/...}` lines in `projects.tex` instead of deleting them.
    - **Courses**:
      - Ensure `courses.tex` renders at most a **single `\item` line** with 3–6 short, relevant course names.
@@ -82,18 +94,46 @@ Use this skill when:
 
 9. **Compile and archive the PDF** (`resumes/`)
    - Compile `main.tex` so `main.pdf` is up to date (run from repo root if needed).
+   - **Compile gate (mandatory)**:
+     - Run `latexmk` or `pdflatex` until the log is clean of **LaTeX errors** and the PDF is **exactly one page** (`Output written on main.pdf (1 page, …)`).
+     - Scan the log for **`Overfull \hbox`** on experience headings; if present, shorten the keyword line, adjust wrapping in `config/commands.tex`, or reduce duplicate tokens—do **not** ship obvious layout breakage.
+     - If you change any macro in `config/commands.tex` (especially argument count), **`grep` all call sites** (e.g. `\resumeSubheadingProminent`) and update every invocation in the same edit pass.
    - **PDF basename**: `<Role-With-Dashes>-YYYY-MM-DD.pdf` (spaces → `-`; shell-safe).
    - **Destination**:
      - When the **employer is known** from the posting or URL, choose `<CompanyDir>` as a stable folder slug under `resumes/` (match existing folders when names align: `AMD`, `Wealthsimple`, `Capital One`, `Canonical`, etc.).
      - Run **`mkdir -p resumes/<CompanyDir>`** so the folder exists, then copy `main.pdf` to **`resumes/<CompanyDir>/<Role-With-Dashes>-YYYY-MM-DD.pdf`**.
      - When the **employer cannot be determined reliably**, save only at the repo root: **`resumes/<Role-With-Dashes>-YYYY-MM-DD.pdf`** (no generic company guess).
 
-10. **Summarize for the user**
+10. **Update `missing_skills.txt` (mandatory)**
+   - Read `resume_guidelines.txt` → *Missing skills tracking* plus the ledger format described at the top of `missing_skills.txt`.
+   - From the JD, take the **8–12 important skills/tools/domains** you used for tailoring.
+   - For each one, decide if the **final** `main.tex` stack (Education, Skills, Experience, Projects, Courses, employer keyword line) provides **honest proof** beyond name-dropping—that is: a bullet, explicit course selection, project, or truthful skill row grounded in proof.
+   - For each JD item that is **still missing** after tailoring (never invent proof to satisfy this):
+     - **Increment** its counter by **1**, or append `Canonical skill name: 1` if no line exists.
+     - **At most one increment per JD skill per tailoring pass**, even if the gap appears twice in the JD.
+     - **Do not** increment for skills you consciously omitted despite having proof elsewhere on the resume.
+   - Canonical names: spell out recognizable industry labels (merge obvious synonyms onto one label, e.g. “Debussy / Verdi-class trace debug”).
+   - After edits, rewrite the skill lines so **`Name: N`** entries appear in **ASCII ascending order by `Name`** (case-insensitive). Keep `# …` instructional comments grouped at the top of the file.
+   - Mention in the chat summary **which ledger keys moved** (+1 added or new rows).
+
+11. **Summarize for the user**
    - Briefly describe:
      - Path to the saved posting (`postings/…`) and exported PDF (`resumes/…`).
      - Which sections changed (for example, “Updated 3 bullets in projects, 2 in experience”).
      - How the edits align with the job’s key responsibilities and keywords.
+     - Any **honest gaps** still missing vs the JD (e.g. Snowflake, C++ without proof)—do not hide these if you dropped a keyword from the page.
+     - **`missing_skills.txt`**: note which **`Name`** rows gained `+1` or were newly added in step **10**.
    - Avoid repeating large LaTeX code blocks in the summary.
+
+## Experience heading rules (`sections/experience/*.tex`, `config/commands.tex`)
+
+These rules prevent recurring layout and content clashes:
+
+- **Default macro**: Most employers use `\resumeSubheading` (**4 arguments**). This repo may use `\resumeSubheadingProminent` for long keyword rows—today it is defined as **5 arguments**: company line, keyword tail (usually starting with `$|$`), location, role title, dates. Never change arity without updating **every** call site.
+- **What belongs in the keyword pipe**: Technologies, platforms, and domains that mirror **Technical Skills** or the JD (e.g. languages, BMC/BIOS, OSes, frameworks). Prefer ordering keywords **consistently with the skill rows** (Languages → Integration hardware → Systems → Validation → …) unless the user specifies otherwise.
+- **What does *not* belong in the pipe**: Soft-skill or prose slogans (e.g. “cross-functional collaboration,” mission statements). Put coordination, stakeholder work, and documentation wins in **bullets** unless the user explicitly demands a phrase in the header.
+- **Technical Skills vs employer line**: If `resume_guidelines.txt` / this skill say category-label bold only in **Technical Skills**, that rule **still applies there** even when the user asks to bold tokens after the colon—explain the constraint and use bullets or the employer keyword line for emphasis instead.
+- **New claims**: Adding a language or tool to **Technical Skills** or the employer keyword line requires an honest mention in at least one **Experience or Project bullet** in the same tailoring pass (or comment the skill out).
 
 ## Lessons learned (avoid common regressions)
 
@@ -101,15 +141,23 @@ Short checklist distilled from real tailoring rounds:
 
 | Issue | What to do instead |
 |--------|---------------------|
-| Fewer than **3** projects shown | Always enable **exactly 3** `\input{...}` lines in `projects.tex`; never ship 2 “to save space” without trimming elsewhere first. |
+| Fewer than **3** projects shown | Always enable **exactly 3** `\input{...}` lines in `projects.tex` unless the user explicitly asks for a different count; never ship 2 “to save space” without trimming elsewhere first. |
 | Bold inside Technical Skills lists | Category label bold only; technologies after `:` stay roman. Employer/experience **subheading** lines may still bold top JD keywords—that pattern is separate from the Skills block. |
 | Silent **bullet replacement** | Comment prior `\resumeItem` text above the new bullet when it would otherwise disappear from the file. |
 | Redundant skill pillars | Merge synonyms (RAS vs resets) after confirming with the candidate’s terminology. |
 | Inconsistent domain capitalization | Align Skills and Experience on the same capitalized names for formal axes (Performance, System Management, IO). |
 | **Two-page** PDF after skills tweak | Merge skill rows or shorten wording before trimming projects below three. |
-| Same JD tailored twice | Do not overwrite `postings/`; point to the existing `.txt` and refresh `main.pdf` / export only. |
+| Same JD tailored twice | Do not overwrite the existing `postings/<CompanyDir>/…` or `postings/*.txt`; point to the existing file and refresh `main.pdf` / export only. |
 | Missing `resumes/<Company>/` | When the employer is known, **`mkdir -p`** that folder and drop the PDF inside; root-level `resumes/<Role>-<date>.pdf` is only for unknown employers. |
 | Invented tooling claims | Never add MAAS/ROCm/etc. unless the candidate or existing bullets support it; when they assert it, phrase narrowly and honestly. |
+| **Soft skills / coordination** stuffed into employer keyword header | Keep the pipe **tech- and domain-heavy**; express collaboration, leadership, and documentation in **bullets**. |
+| **`Overfull \hbox`** on `\resumeSubheadingProminent` | Use the split-size layout in `config/commands.tex`, shorten keywords, or widen/wrap the left column—recompile until clean. |
+| **Macro arity drift** | Changing `\newcommand{\resumeSubheadingProminent}[N]` without fixing **all** `\resumeSubheadingProminent{...}` blocks causes silent or noisy failures—grep and fix in one changeset. |
+| **User requests violate `resume_guidelines.txt`** | Follow repo canon (e.g. no post-colon bold in Technical Skills). Say what you did instead and **do not** silently break formatting rules. |
+| **BIOS and UEFI doubled** | Use **`BIOS/UEFI`** in Technical Skills, employer keyword line, and bullets for a single consistent token. |
+| **Header lists token dropped from `skills.tex`** | Re-add proof and the skill, or remove the orphan token from `\resumeSubheadingProminent` in the same edit. |
+| **Metric without a reason** | Add a brief mechanism, qualification, or scope clause—or drop the number if it cannot be defended. |
+| Forgot **`missing_skills.txt`** after tailoring | Mandatory step **10**: increment or append missing JD skills lacking honest proof before final summary. |
 
 ## Trigger phrases
 

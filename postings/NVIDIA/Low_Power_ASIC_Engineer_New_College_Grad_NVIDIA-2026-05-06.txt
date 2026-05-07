@@ -1,0 +1,64 @@
+# Low Power Design/Verification ASIC Engineer - New College Grad 2026
+# NVIDIA
+# Saved: 2026-05-06
+# Source: user-provided posting text
+
+Low Power ASIC Engineer - New College Grad 2026
+Apply
+locations
+US, CA, Santa Clara
+time type
+Full time
+posted on
+Posted 12 Days Ago
+job requisition id
+JR2017001
+Today, NVIDIA is tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what's never been done before takes vision, innovation, and the world's best talent. As an NVIDIAN, you'll be immersed in a diverse, encouraging environment where everyone is inspired to do their best work. Come join the team and see how we can make a lasting impact on the world!
+
+We are now looking for an Low Power Design/Verification ASIC Engineer - New College Grad 2026. We continue to rapidly grow the research and development of energy-efficient GPU and SOC architectures. We are continually innovating in creative and unrivaled ways to improve our ability to deliver exceptional perf/watt solutions in a wide range of sectors. Come join NVIDIAs Low Power DV team to develop state of the art GPUs to power AI, Automotive, GeForce, and Mobile products.
+
+What you'll be doing:
+
+Working very closely with Low Power Architecture, Design, and Software teams to understand next generation features.
+
+Responsible for architecting/developing testbench, infrastructure, and testplans to verify various power management solutions for NVIDIA products.
+
+You will have the opportunity bring creative ideas that help improve power-aware DV methodologies, as well as influence EDA vendors to improve our simulation and debug efficiencies.
+
+What we need to see:
+
+Recently completed a BS, MS or PhD in Electrical or Computer Engineering, or equivalent experience.
+
+You have an understanding of low power design techniques such as multi VT, Clock gating, Power gating, Block Activity Power, and Dynamic Voltage-Frequency Scaling (DVFS) etc.
+
+Good understanding of processor architecture (GPU is a plus), and related power management design/DV techniques.
+
+Must be experienced with Incisive Low-Power or Synopsys VCS NLP
+
+Strong debug skills and experience with Verdi is needed
+
+Must be fluent in Verilog, SystemVerilog, and understanding of UVM.
+
+Ways to stand out from the crowd:
+
+Prior knowledge of Low Power Architecture, Low Power CV, and deep learning
+
+Good understanding of power intent in UPF format is a plus
+
+A strong background in Low Power architectures or verification is a plus.
+
+Scripting abilities in Python or PERL is a plus and knowledge of C or C++ is a plus
+
+Experience writing or maintaining the script or Makefile that builds the simulation program is a plus
+
+NVIDIA is widely considered to be one of the technology world's most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. Are you creative and autonomous? Do you love a challenge? If so, we want to hear from you.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 100,000 USD - 166,750 USD for Level 1, and 116,000 USD - 189,750 USD for Level 2.
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until April 28, 2026.
+This posting is for an existing vacancy.
+
+NVIDIA uses AI tools in its recruiting processes.
+
+NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.

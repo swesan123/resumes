@@ -1,0 +1,65 @@
+# Role: Senior Developer, Atlassian ecosystem (Markham, ON)
+# Company: AMD
+# Date saved: 2026-05-02
+# Source: user paste (tailor-resume / AMD master variant)
+
+WHAT YOU DO AT AMD CHANGES EVERYTHING
+
+At AMD, our mission is to build great products that accelerate next-generation computing experiences—from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you’ll discover the real differentiator is our culture. We push the limits of innovation to solve the world’s most important challenges—striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.  Together, we advance your career.
+
+Responsibilities
+The Role
+
+We are seeking a highly skilled Senior Developer with deep expertise in the Atlassian ecosystem to design, build, and enhance solutions that improve organizational efficiency and support strategic business objectives. This role requires a strong analytical mindset, excellent logical and strategic thinking skills, and the ability to translate complex business needs into scalable technical solutions.
+
+THE PERSON
+
+The ideal candidate is a fast learner and critical thinker with a strong technical foundation in Atlassian application development, API integrations, and AI‑related technologies. You should be comfortable analyzing business processes, gathering requirements, and architecting solutions that deliver measurable impact.
+
+Key Responsibilities
+
+Design and develop custom solutions using python, java scripts, Atlassian Forge, REST APIs, automation frameworks, AI development, Database.
+Act as the Subject Matter Expert (SME) for Jira, Confluence, and related Atlassian tools , integration with other applications, providing technical guidance and best practices.
+Conduct structured problem analysis, system design, and high‑quality software development following modern engineering practices.
+Build and enhance automation, applications, and integrations to streamline workflows and improve operational efficiency.
+Develop and maintain tools, frameworks, and methodologies that support continuous improvement in the development process.
+Collaborate with cross‑functional teams to translate business requirements into sound technical designs and implementation plans.
+Work with legacy systems to extract, transform, and integrate data into the Atlassian ecosystem.
+Partner with engineering, infrastructure, and product teams to leverage emerging technologies— including AI capabilities— to enhance services and application performance.
+PREFERRED EXPERIENCE:
+
+Develop solutions extending Atlassian Forge, REST services , integrations and JIRA plugins.
+Serve as the JIRA / Confluence technical resource (Subject Matter Expert).
+Comprehensive knowledge of problem analysis, structured analysis, design and programming techniques.
+In-depth experience of automation, designing and implementing applications.
+Develop tools and methodologies to improve the effectiveness of the development process.
+Ability to source data from legacy systems, effectively adapt to rapidly changing technology and apply it to business needs.
+In-depth experience of automation, designing and implementing applications.
+Ability to source data from legacy systems, effectively adapt to rapidly changing technology and apply it to business needs.
+Comfortable in assisting project teams develop requirement and design specifications for new and existing applications.
+Collaborate effectively with other technical teams to exploit new technologies to enhance the applications and service infrastructure.
+
+ACADEMIC CREDENTIALS:
+
+Bachelor's degree in CE, EE, Information Systems, or a related field.
+
+LOCATION:
+
+Markham,ON
+
+This role is not eligible for visa sponsorship.
+
+#LI-AJ1
+
+Qualifications
+Benefits offered are described: AMD benefits at a glance.
+
+AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law.   We encourage applications from all qualified candidates and will accommodate applicants’ needs under the respective laws throughout all stages of the recruitment and selection process.
+
+AMD may use Artificial Intelligence to help screen, assess or select applicants for this position.  AMD’s “Responsible AI Policy” is available here.
+
+This posting is for an existing vacancy.
+
+Apply Now
+Email this job to a friend
+Share on your newsfeed

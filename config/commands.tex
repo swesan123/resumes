@@ -1,8 +1,11 @@
 %---------------------- CUSTOM MACROS ------------------------
 
+% Body text for bullets (smallest tier; headings use \normalsize/\small above this).
+\newcommand{\resumeBodySize}{\footnotesize}
+
 % Bullet-wrapped resume item
 \newcommand{\resumeItem}[1]{
-  \item \parbox[t]{\descwidth}{\small #1}
+  \item \parbox[t]{\descwidth}{\resumeBodySize #1}
 }
 
 % Work/Project experience entry format
@@ -14,12 +17,28 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-% Project heading (title + date)
+% Prominent experience header: company row is normalsize bold; keyword tail (#2, usually starting with "|") is smaller bold for a cleaner hierarchy; location stays normalsize bold; role row italic small.
+% Args: #1 company name, #2 keyword line incl.\ leading "|", #3 location, #4 role, #5 dates.
+\newcommand{\resumeSubheadingProminent}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}>{\raggedright\arraybackslash}p{0.76\textwidth}@{\extracolsep{\fill}}r@{}}
+      {\normalsize\bfseries #1\,{\footnotesize\bfseries #2}} & {\normalsize\bfseries #3} \\
+      {\small\itshape #4} & {\small\itshape #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Prior 4-arg form single-size bold block (comment out; do not delete):
+% \newcommand{\resumeSubheadingProminent}[4]{ ... #1 full left cell ... }
+
+% Prior keyword-dense header at footnotesize (comment out; do not delete):
+% \newcommand{\resumeSubheadingSmall}[4]{ ... }
+
+% Project heading (title + date) — matches experience prominent tier vs bullet body.
 \newcommand{\resumeProjectHeading}[2]{
   \item
-  \begin{tabularx}{0.97\textwidth}{@{}>{\raggedright\arraybackslash}X r@{}}
-    \small #1 & \textit{\small #2} \\
-  \end{tabularx}\vspace{-7pt}
+    \begin{tabularx}{0.97\textwidth}{@{}>{\raggedright\arraybackslash}X r@{}}
+    {\normalsize\bfseries #1} & {\small\itshape #2} \\
+    \end{tabularx}\vspace{-7pt}
 }
 
 % List wrappers

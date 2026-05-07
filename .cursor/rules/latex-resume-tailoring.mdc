@@ -13,12 +13,14 @@ alwaysApply: true
 ## When the user pastes a job posting
 
 - When the user pastes a job description and asks to tailor the resume:
-  - Save the **full posting text** under `postings/` as specified in `.cursor/skills/latex-resume-tailoring/SKILL.md` (new dated file; do not overwrite unless asked).
+  - Save the **full posting text** under `postings/<CompanyDir>/` or `postings/` as specified in `.cursor/skills/latex-resume-tailoring/SKILL.md` (new dated file; do not overwrite unless asked).
   - Extract the role/title, seniority/level, employer when stated, main responsibilities, and **8–12 core skills or keywords** from the posting.
   - Use `resume_guidelines.txt` for bullet **style**, **phrasing**, **bolding**, and **impact/metrics** expectations.
   - Propose or directly apply **concrete edits** to the LaTeX resume files in this repo to best align experience with the job, while staying honest.
   - **Automatically choose** which projects and courses to show based on the posting (**exactly 3 projects**, and a single-line “Relevant Courses” entry), commenting out others instead of deleting them.
   - In **Technical Skills**, bold **only** category names (Languages, Systems, etc.), not the comma-separated technologies after each colon.
+  - Keep **Technical Skills** as **proof-backed tool and domain tokens**; describe **how** you applied them (out-of-band work, bring-up, customer environments) in **bullets**. When removing a skill from `sections/skills.tex`, update the employer **keyword pipe** in `sections/experience/*.tex` in the same pass if that token appeared there. Prefer merged synonyms such as **`BIOS/UEFI`** over redundant **BIOS** and **UEFI** entries.
+  - Use **bold headline metrics** in bullets when appropriate; pair **numbers** with a credible reason or scope—do not invent metrics.
 
 ## Bullet expectations
 
@@ -41,6 +43,7 @@ alwaysApply: true
 
 - By default, directly edit the `.tex` files in this repo when tailoring the resume, instead of only giving abstract advice.
 - After compiling, archive the PDF under `resumes/` per `resume_guidelines.txt` / the tailoring skill (**create** `resumes/<CompanyDir>/` with `mkdir -p` when the employer is known, then save the PDF inside it).
+- After each tailoring pass, **`missing_skills.txt` MUST be updated** (increment or append) for JD skills still missing honest proof on `main.tex`—see tailoring skill step **10** and `resume_guidelines.txt`.
 - After making edits, briefly summarize **paths saved** (`postings/…`, `resumes/…`), **which sections changed and why** relative to:
   - the specific job posting, and
   - the expectations in `resume_guidelines.txt`.

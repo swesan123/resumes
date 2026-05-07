@@ -21,20 +21,30 @@ description: Verifies a tailored LaTeX resume against a specific job posting usi
 
 2. **Load guidelines and current resume**
    - Read `resume_guidelines.txt` and treat it as the canonical checklist.
+   - Read **`config/commands.tex`** for resume macros (argument counts, font tiers). When verification follows tailoring, confirm macro definitions still match every call site.
    - Read the relevant LaTeX sections:
      - `sections/skills.tex`
      - `sections/experience/*.tex`
      - `sections/projects/projects.tex` and the referenced project files
      - `sections/courses.tex`
 
+2b. **Tooling verification (mandatory when repo access allows)**
+   - Compile `main.tex` from repo root and confirm **`main.pdf` is exactly one page** and the log has **no LaTeX errors**.
+   - Grep the `.log` (or compiler output) for **`Overfull \hbox`**; flag headings or skill blocks that risk ugly overflow.
+   - Run **`grep -R '\\resumeSubheadingProminent' sections/`** (and any other custom heading macros) and verify the **number of brace-groups per call** matches `\newcommand{\resumeSubheadingProminent}[N]` in `config/commands.tex`.
+
 3. **Section-by-section checks**
    - **Technical Skills**
      - Confirm that each listed skill is supported by at least one bullet in Experience, Projects, or Courses.
      - Flag any skills that are neither mentioned in bullets nor clearly implied by coursework.
      - Confirm bold appears **only** on category labels (Languages, Systems, etc.), not on comma-separated technologies after each colon.
+     - Flag **duplicate synonyms** (e.g. **BIOS** and **UEFI** when the resume should use **`BIOS/UEFI`**), and **orphan employer keywords** that appear in `\resumeSubheadingProminent` but not in Technical Skills (or the reverse) without justification.
    - **Experience**
      - Check that at least one role strongly supports the top JD skills and responsibilities.
      - Ensure bullets follow guidelines: action + what changed + tech + outcome/metric, 1–2 lines, no brackets.
+     - **Employer keyword line hygiene**: The pipe-style keyword list should stay **keyword/domain-heavy** (skills, stacks, validation axes)—not mission statements or vague soft-skill slogans. Coordination and documentation themes should appear in **bullets** unless the candidate explicitly wants otherwise.
+     - **Header ↔ Skills consistency**: Important tokens repeated in the employer keyword row should appear under **Technical Skills** or be justified as JD-only emphasis; otherwise flag duplication or orphan keywords. Tokens dropped from `skills.tex` should not linger in the keyword pipe (or proof must be re-added).
+     - **Responsibility vs skill**: Narratives such as extensive **OOB** or **integration bring-up** work belong primarily in bullets; flag them as misleading **Technical Skills** rows if they read as activities without clear tool/domain proof.
    - **Projects**
      - Confirm there are **exactly 3** projects shown and each has at most 2 bullets.
      - Check that chosen projects provide “proof” for important JD skills (e.g., Python, testing, automation, OS).
@@ -61,6 +71,8 @@ description: Verifies a tailored LaTeX resume against a specific job posting usi
      - ~40%: coverage of top JD skills/keywords on the page.
      - ~30%: coverage of core responsibilities in Experience/Projects.
      - ~30%: adherence to `resume_guidelines.txt` (style, bolding, layout, no brackets).
+   - **Hard penalties** (cap guideline/layout portion unless fixed):
+     - PDF not **one page**, compile **errors**, severe **`Overfull \hbox`** on headings, **wrong macro arity** / broken calls, **fewer than 3** active projects, **skills without proof**, or **bold inside Technical Skills lists** after colons.
    - Optionally run up to **3 quick “what-if” adjustments** (e.g., tweak bolding, swap one project, adjust one bullet) and recompute, using the best score.
 
 7. **Report back**
@@ -69,3 +81,18 @@ description: Verifies a tailored LaTeX resume against a specific job posting usi
      - 3–6 concrete observations (e.g., “Python is present and bolded”, “Docker is listed but not in JD – consider de-bolding”).
      - 3–5 **targeted suggestions** if the score is below ~85, referencing specific sections/files to tweak.
 
+8. **`missing_skills.txt` (recommended after verification)**
+   - Apply the **same incremental update rules** as tailoring step **10** in `latex-resume-tailoring`: for each JD skill still lacking proof after verification, **`Name: count` +1** (or append with `1`), sort skill lines alphabetically, keep `#` comments at top.
+   - Mention which ledger rows changed when reporting back.
+
+## Common regressions to flag (from real tailoring sessions)
+
+| Symptom | Verification action |
+|--------|----------------------|
+| Coordination / “cross-functional” prose in employer pipe | Move narrative into bullets; keep pipe tech-heavy. |
+| `Overfull \hbox` on experience rows | Point to `config/commands.tex` column widths / keyword length; shorten list or wrap. |
+| `\resumeSubheadingProminent` arity mismatch | Grep call sites vs `\newcommand{...}[N]`. |
+| New language/tool on page without bullet proof | Require bullet or comment skill out. |
+| User asked to break Technical Skills bolding rules | Confirm page still follows category-label-only bolding per `resume_guidelines.txt`. |
+| Metrics without a “why” | Flag % or time-save claims that lack mechanism, scope, or honest qualification. |
+| BIOS and UEFI listed separately | Suggest **`BIOS/UEFI`** when redundant; align bullets and header. |
