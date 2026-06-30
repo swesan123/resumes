@@ -1,0 +1,514 @@
+# WORK EXPERIENCE SECTION GUIDELINES
+
+## OVERALL GOAL
+
+The work experience section is the MOST important part of the resume.
+
+It should:
+- Immediately communicate technical depth
+- Show engineering impact
+- Demonstrate ownership
+- Match the target job posting closely
+- Be optimized for recruiters + ATS systems
+- Sound like real engineering work
+- Show measurable contributions
+- Emphasize systems thinking and technical complexity
+
+The section should NOT:
+- Read like a job description
+- Contain vague responsibilities
+- Use generic buzzwords
+- Sound passive
+- Sound academic
+- Include filler or redundant wording
+- Include technologies not actually demonstrated in bullets
+
+Every bullet should sound:
+- Technical
+- Specific
+- Results-oriented
+- Concise
+- Engineering-focused
+- Believable
+
+--------------------------------------------------
+SECTION 1 — JOB POSTING CUSTOMIZATION RULES
+--------------------------------------------------
+
+## EVERY resume MUST be customized to the target posting
+
+The work experience section should adapt wording to:
+- Match keywords from the job posting
+- Match technologies from the posting
+- Match engineering responsibilities from the posting
+- Match the role specialization
+
+Examples:
+- Infrastructure role → emphasize automation, Linux, debugging, reliability
+- Backend role → emphasize APIs, databases, distributed systems
+- Systems role → emphasize validation, platform debugging, hardware/software integration
+- Full-stack role → emphasize product delivery, frontend/backend integration
+
+--------------------------------------------------
+
+## IMPORTANT REWORDING RULE
+
+When tailoring to a job posting:
+
+DO NOT delete old bullets.
+
+Instead:
+1. Comment out old bullets
+2. Preserve old versions
+3. Create rewritten tailored versions underneath
+
+Example:
+
+# OLD:
+# • Developed Python tooling for workload automation.
+
+NEW:
+• Developed Python automation tooling for Linux-based validation workflows, improving debugging efficiency across GPU bring-up and infrastructure testing environments.
+
+This preserves:
+- previous work
+- iteration history
+- reusable variants
+
+--------------------------------------------------
+
+## REUSE EXISTING BULLETS FIRST
+
+Before creating a brand new bullet:
+1. Search existing bullets
+2. Identify bullets already aligned with posting
+3. Reword/refine existing bullets first
+4. Only create new bullets if necessary
+
+Priority order:
+1. Existing matching bullet
+2. Existing partially matching bullet
+3. New bullet creation
+
+Reason:
+- Keeps resume grounded in real experience
+- Prevents AI-generated inconsistency
+- Maintains truthful narrative
+- Preserves engineering authenticity
+
+--------------------------------------------------
+SECTION 2 — HEADER SKILLS RULES
+--------------------------------------------------
+
+## HEADER SKILLS MUST COME FROM TECHNICAL SKILLS SECTION
+
+Example:
+Advanced Micro Devices (AMD) | Python, C/C++, Linux, Docker, ROCm
+
+Allowed:
+- Skills already present in technical skills section
+
+NOT ALLOWED:
+- Random buzzwords
+- Generic concepts
+- Skills not demonstrated in bullets
+- Skills not actually used
+
+--------------------------------------------------
+
+## EVERY HEADER SKILL MUST APPEAR IN BULLETS
+
+CRITICAL RULE:
+If a skill appears beside the company name/header,
+that skill MUST also appear somewhere inside the experience bullets.
+
+Example:
+
+HEADER:
+Python, Linux, Docker
+
+Then bullets MUST contain:
+- **Python**
+- **Linux**
+- **Docker**
+
+If a skill is not mentioned in bullets:
+- remove it from header
+OR
+- add a real bullet mentioning it
+
+Never include unused technologies beside the header.
+
+--------------------------------------------------
+
+## ALL HEADER SKILLS MUST BE BOLDED IN BULLETS
+
+Example:
+
+• Developed **Python** automation tooling for **Linux** validation environments using **Docker** containers.
+
+This improves:
+- Recruiter scanning
+- ATS keyword visibility
+- Technical readability
+
+--------------------------------------------------
+SECTION 3 — BULLET STRUCTURE
+--------------------------------------------------
+
+## Preferred bullet formula
+
+[ACTION VERB] + [TECHNICAL WORK] + [TECHNOLOGIES] + [IMPACT]
+
+GOOD:
+• Developed **Python** automation tooling for GPU workload validation on **Linux**, reducing repetitive diagnostic setup time from 20 minutes to under 5 minutes.
+
+GOOD:
+• Debugged **BMC** and **BIOS/UEFI** issues across MI300X and MI350X rack environments, documenting reusable bring-up procedures for large-scale deployment validation.
+
+BAD:
+• Responsible for debugging issues.
+
+BAD:
+• Helped with automation tasks.
+
+--------------------------------------------------
+SECTION 4 — TECHNICAL SPECIFICITY
+--------------------------------------------------
+
+## Bullets must contain:
+- Real technologies
+- Real systems
+- Real engineering actions
+- Real workflows
+- Real debugging/process details
+
+GOOD:
+• Investigated platform-level GPU failures using **Linux** logs, firmware diagnostics, and workload repro scripts.
+
+BAD:
+• Solved technical problems.
+
+GOOD:
+• Configured **KVM/QEMU** virtualization environments for Linux-based platform validation workflows.
+
+BAD:
+• Worked with virtualization tools.
+
+--------------------------------------------------
+SECTION 5 — OWNERSHIP LANGUAGE
+--------------------------------------------------
+
+## Emphasize initiative and ownership
+
+Strong ownership verbs:
+- Led
+- Initiated
+- Designed
+- Developed
+- Architected
+- Coordinated
+- Streamlined
+- Automated
+- Spearheaded
+- Implemented
+- Diagnosed
+
+GOOD:
+• Led weekly debugging coordination across validation teams during MI350X bring-up.
+
+BAD:
+• Participated in meetings.
+
+GOOD:
+• Initiated reusable workload launcher scripts to standardize repro environments across validation runs.
+
+--------------------------------------------------
+SECTION 6 — METRICS & IMPACT
+--------------------------------------------------
+
+## Use metrics whenever realistic
+
+Strong metrics:
+- Time reductions
+- Automation scale
+- Runs/tests supported
+- Coverage improvements
+- Deployment scale
+- Queue reduction
+- Workflow acceleration
+- Reduced debugging effort
+- Reduced manual work
+- Faster diagnostics
+
+GOOD:
+• Coordinated 100+ validation runs weekly across Linux and Windows HPC/ML workload gates.
+
+GOOD:
+• Reduced diagnostic setup time from 20 minutes to under 5 minutes using reusable automation scripts.
+
+GOOD:
+• Reduced duplicate/reopened defects by ~30% through standardized repro bundle workflows.
+
+--------------------------------------------------
+
+## Metrics must remain believable
+
+DO NOT:
+- Invent fake impact
+- Use unrealistic percentages
+- Overinflate scope
+
+Metrics should sound:
+- Grounded
+- Engineering-realistic
+- Credible
+
+--------------------------------------------------
+SECTION 7 — ATS OPTIMIZATION
+--------------------------------------------------
+
+## Bullets should naturally include:
+- Exact technologies
+- Exact frameworks
+- Exact operating systems
+- Exact platforms
+- Exact infrastructure tools
+
+GOOD:
+• Built backend APIs using **Node.js**, **PostgreSQL**, and **TypeScript**.
+
+BAD:
+• Worked on backend systems.
+
+Use exact recruiter-searchable keywords.
+
+--------------------------------------------------
+SECTION 8 — EXPERIENCE DENSITY
+--------------------------------------------------
+
+## Strong bullets are:
+- Dense
+- Technical
+- Efficient
+- Information-rich
+
+Avoid:
+- Long storytelling
+- Multi-sentence explanations
+- Generic context
+- Corporate jargon
+
+Target:
+1–2 lines per bullet ideally.
+
+--------------------------------------------------
+SECTION 9 — ENGINEERING POSITIONING
+--------------------------------------------------
+
+## The work experience should position the candidate as:
+
+- Systems engineer
+- Platform engineer
+- Validation engineer
+- Infrastructure engineer
+- Backend/full-stack engineer
+- Automation engineer
+
+NOT:
+- Generic IT worker
+- Generic student
+- Tutorial-level developer
+
+--------------------------------------------------
+SECTION 10 — SPECIALIZATION RULES
+--------------------------------------------------
+
+## SYSTEMS / VALIDATION ROLES
+
+Emphasize:
+- Linux
+- Automation
+- Debugging
+- Validation
+- Hardware/software integration
+- Firmware
+- Infrastructure
+- Diagnostics
+- Root-cause analysis
+- Platform reliability
+
+--------------------------------------------------
+
+## BACKEND ROLES
+
+Emphasize:
+- APIs
+- Databases
+- Scalability
+- Backend services
+- Distributed systems
+- Reliability
+- Infrastructure
+- Performance
+
+--------------------------------------------------
+
+## FULL-STACK / PRODUCT ROLES
+
+Emphasize:
+- Product delivery
+- End-to-end ownership
+- Frontend/backend integration
+- User-facing features
+- Mobile/web frameworks
+- Authentication
+- Payments
+- Deployment
+
+--------------------------------------------------
+SECTION 11 — AI WRITING RESTRICTIONS
+--------------------------------------------------
+
+## Avoid obvious AI-generated wording
+
+DO NOT USE:
+- Leveraged cutting-edge technologies
+- Results-driven engineer
+- Dynamic self-starter
+- Innovative problem solver
+- Synergized workflows
+- Utilized various tools
+- Worked in a fast-paced environment
+
+Prefer:
+- Direct engineering statements
+- Technical specificity
+- Concrete actions
+
+--------------------------------------------------
+SECTION 12 — BULLET IMPROVEMENT STRATEGY
+--------------------------------------------------
+
+When improving bullets:
+
+STEP 1:
+Identify:
+- Technologies
+- Systems
+- Ownership
+- Metrics
+- Impact
+
+STEP 2:
+Increase:
+- Technical specificity
+- Engineering depth
+- Keyword relevance
+- Measurable outcomes
+
+STEP 3:
+Reduce:
+- Fluff
+- Generic wording
+- Passive phrasing
+- Repetition
+
+--------------------------------------------------
+SECTION 12B — PLATFORM / LAB BULLETS (DATACENTER GPU VALIDATION)
+--------------------------------------------------
+
+Use separate bullets for distinct work. Do not repeat the same maintenance story twice.
+
+## Lab / platform bullet (one bullet)
+
+Cover in one line when true:
+- Linux distros first: Ubuntu, RHEL, CentOS — then Windows.
+- Updating systems to validated BKC baselines.
+- BMC and BIOS/UEFI flash/update work.
+- Docker workload images staged on racks.
+- NPI: say what NPI enabled (e.g. enabling NPI so ML workloads could run on MI350X), not vague "NPI bring-up" alone.
+
+GOOD pattern:
+- Updated Linux GPU racks on Ubuntu, RHEL, and CentOS and Windows systems to validated BKC baselines; flashed BMC and BIOS/UEFI, staged Docker images, and enabled NPI so ML workloads could run on MI350X.
+
+## BMC / firmware debug bullet (separate from lab)
+
+This bullet is for failure debug and documentation — not re-listing rack maintenance, OS imaging, or Docker staging.
+
+GOOD pattern:
+- Debugged BMC and BIOS/UEFI failures on MI300X, MI325X, and MI350X racks from mixed customer configs; wrote flash and rack guides reused on 20+ bring-ups, cutting repeat setup questions by about 40%.
+
+BAD: Two bullets that both say maintained racks, flashed BIOS, staged Docker.
+
+## KVM / QEMU bullet
+
+- Setup on specific platforms (e.g. MI325X CentOS), docs teammates reused.
+- Avoid hollow closers: "guest GPU paths", "wider lane sign-off", "before wider lane sign-off" unless tied to a concrete outcome.
+
+GOOD:
+- Set up KVM/QEMU on MI325X CentOS hosts and wrote setup docs the team reused for guest bring-up.
+
+--------------------------------------------------
+SECTION 12C — BANNED / WEAK EXPERIENCE PHRASES
+--------------------------------------------------
+
+Avoid in Work Experience bullets:
+- test-station / test station (prefer: validation team, lab racks, diagnostic runs)
+- via reusable launch paths / reusable execution paths (say what the scripts do)
+- dropping one-off retests (explain: standardized repro scripts, fewer reopened defects)
+- lane sign-off / wider sign-off (vague; remove or replace with concrete validation outcome)
+- strengthening production software quality gates (say: CI for lint, tests, PR checks)
+- improving signal-to-noise for downstream analysis (say what the analysis did)
+- Duplicate lab + BMC bullets that both describe maintaining racks and flashing firmware
+
+Prefer:
+- validation team, diagnostic prep, lab racks
+- Git-tracked scripts, internal workload launcher
+- same repro files / repro bundle
+- manual prep from about X minutes to under Y minutes per run
+
+--------------------------------------------------
+SECTION 13 — EXPERIENCE AUTHENTICITY
+--------------------------------------------------
+
+## Bullets must remain believable and grounded
+
+DO:
+- Stay aligned with actual experience
+- Reword truthfully
+- Emphasize real engineering work
+
+DO NOT:
+- Invent architectures
+- Fake ownership
+- Exaggerate scale
+- Claim senior-level responsibilities unrealistically
+
+The resume should sound:
+- Strong
+- Credible
+- Technically mature
+
+--------------------------------------------------
+SECTION 14 — FINAL QUALITY CHECK
+--------------------------------------------------
+
+Before finalizing ANY work experience section:
+
+CHECK:
+- Does every bullet sound technical?
+- Does every bullet contain real engineering work?
+- Does every bullet communicate impact?
+- Are metrics believable?
+- Are strong action verbs used?
+- Are technologies explicitly named?
+- Are all header technologies mentioned in bullets?
+- Are all header technologies bolded in bullets?
+- Does the wording match the target posting?
+- Were existing bullets reused before creating new ones?
+- Were old bullets commented out instead of deleted?
+- Does the section sound like a strong engineer wrote it?
+- Would a recruiter quickly understand technical strengths?
+
+If not, rewrite it.

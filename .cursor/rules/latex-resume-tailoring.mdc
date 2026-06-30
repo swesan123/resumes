@@ -9,6 +9,7 @@ alwaysApply: true
 
 - Always treat `resume_guidelines.txt` in this repo as the **canonical specification** for resume bullet points.
 - If generic resume advice conflicts with `resume_guidelines.txt`, **prefer `resume_guidelines.txt`** unless the current chat explicitly overrides it.
+- Also apply `guidelines/writing_guidelines.txt`, `guidelines/technical_skills_guidelines.txt` (SECTION 4B category placement), `guidelines/work_experience_guidelines.txt` (SECTION 12B lab/BMC, 12C banned phrases), and `guidelines/projects_guidellines.txt` during tailoring.
 
 ## When the user pastes a job posting
 
@@ -17,7 +18,7 @@ alwaysApply: true
   - Extract the role/title, seniority/level, employer when stated, main responsibilities, and **8–12 core skills or keywords** from the posting.
   - Use `resume_guidelines.txt` for bullet **style**, **phrasing**, **bolding**, and **impact/metrics** expectations.
   - Propose or directly apply **concrete edits** to the LaTeX resume files in this repo to best align experience with the job, while staying honest.
-  - **Automatically choose** which projects and courses to show based on the posting (**exactly 3 projects**, and a single-line “Relevant Courses” entry), commenting out others instead of deleting them.
+  - **Automatically choose** which projects and courses to show based on the posting (**7–8 projects**, lead with 3–4 best matches, then add breadth projects; single-line “Relevant Courses” entry), commenting out others instead of deleting them.
   - In **Technical Skills**, bold **only** category names (Languages, Systems, etc.), not the comma-separated technologies after each colon.
   - Keep **Technical Skills** as **proof-backed tool and domain tokens**; describe **how** you applied them (out-of-band work, bring-up, customer environments) in **bullets**. When removing a skill from `sections/skills.tex`, update the employer **keyword pipe** in `sections/experience/*.tex` in the same pass if that token appeared there. Prefer merged synonyms such as **`BIOS/UEFI`** over redundant **BIOS** and **UEFI** entries.
   - Use **bold headline metrics** in bullets when appropriate; pair **numbers** with a credible reason or scope—do not invent metrics.
@@ -35,9 +36,10 @@ alwaysApply: true
 - Keep bullets concise (typically **1–2 lines**); avoid weak verbs and vague language.
 - Do **not** invent experience or skills; only **rephrase and highlight what is already true**.
 - **Never delete** `.tex` content to hide it; **comment out** with `%` instead (skills, project `\input` lines, bullets, optional sections).
-- Keep the final resume to **one page** whenever reasonable for the user’s level by:
-  - Reducing low-impact bullets, trimming verbose wording, and **commenting out** lower-priority sections (do not delete).
-  - Preferring a compact, comma-separated `Relevant Courses` line over a long multi-line list.
+- **Default to two pages** (standard) with full project bullets (2–3 per project). **Never** merge project bullets into one line or strip sections only to force one page—two pages is the goal.
+  - Only force one page if the user explicitly asks for it.
+  - To manage overflow (rare): comment out lower-priority project `\input` lines or trim verbose wording—never collapse bullet count.
+  - Always use a compact, comma-separated `Relevant Courses` line on page 2.
 
 ## Interaction style
 

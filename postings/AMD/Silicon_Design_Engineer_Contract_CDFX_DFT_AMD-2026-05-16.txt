@@ -1,0 +1,21 @@
+# Role: Silicon Design Engineer (1 year contract)
+# Company: AMD
+# Requisition ID: 2026-85935 / 2026-85936 (duplicate postings)
+# Date Saved: 2026-05-16
+# Source: User-provided posting text
+
+Central DFX (CDFX) — Design-for-Test (DFT) and Design-for-Debug (DFD) for APU/GPU products.
+
+KEY RESPONSIBILITIES (summary):
+- Understand DFT architecture
+- Automated design flows for DFT features in SOC/IP
+- Design checks with industry and in-house tools
+- Perl, Python, TCL scripts for scalable DFT implementation
+- Monitor CAD/IP regression, debug failures, analyze coverage
+- In-house automation, utilities, intranet web portal, AI/ML applications
+
+PREFERRED EXPERIENCE (summary):
+- Perl/Python/Shell scripting, C++, SQL
+- AI/ML application experience
+- OOP, digital circuits and VLSI knowledge
+- Strong problem solving and communication

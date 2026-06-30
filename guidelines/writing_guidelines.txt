@@ -17,6 +17,10 @@ The resume should NOT sound:
 - Like a job description
 - Like AI-generated corporate jargon
 
+Cross-references (tailoring agents must read):
+- Technical Skills category placement: guidelines/technical_skills_guidelines.txt → SECTION 4B
+- Datacenter GPU lab vs BMC bullets and banned phrases: guidelines/work_experience_guidelines.txt → SECTION 12B and 12C
+
 The writing style should prioritize:
 1. Technical specificity
 2. Ownership

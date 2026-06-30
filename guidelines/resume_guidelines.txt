@@ -105,13 +105,16 @@ LaTeX editing policy (no deletions)
 - When tailoring, **do not delete** lines from `.tex` files to hide content.
 - Prefer **`%` comments** for skills lines, `\input{...}` project lines, sections, or old bullets so nothing is lost and variants can be restored quickly.
 
-Single-page layout, sections, and skills alignment
---------------------------------------------------
-- Default to a **single-page resume** for internship, new grad, and early-career roles:
-  - Sections, in order: Heading, Education, Technical Skills, Work Experience, Projects, (Relevant Courses if space permits).
-  - Omit or comment out lower-priority sections (e.g., Hobbies, extra courses) when they cause overflow.
+Two-page layout, sections, and skills alignment (Standard)
+-----------------------------------------------------------
+- **Default to a two-page resume** for experienced roles and substantial project portfolios:
+  - Page 1: Heading, Education, Technical Skills, Work Experience (5–7 bullets), Projects start
+  - Page 2: Projects continue (7–8 total), Relevant Courses, Hobbies & Interests
+  - Goal: Show depth of experience and breadth of projects—never artificially compress to one page
+  - Sections always appear: Heading, Education, Technical Skills, Work Experience, Projects (7–8), Courses, Hobbies
+- For early-career/new-grad roles, single-page is acceptable if requested explicitly; otherwise default to two pages
 - Treat **Technical Skills** as a promise that must be **proven in bullets**:
-  - Only list skills that appear in at least one Experience, Project, or Courses bullet **in the current one-page resume**.
+  - Only list skills that appear in at least one Experience, Project, or Courses bullet **on the resume**.
   - Derive the skills list **from the active sections** (current projects/experience shown), not from your entire background.
   - When tailoring, prefer **commenting out** unused skills over adding new bullets just to justify them.
   - **Formatting**: Bold **only** the category labels in each line (e.g. `\textbf{Languages}{: Python, C}`). Do **not** bold individual tools or languages after the colon—keep post-colon lists unbolded for a clean scan pattern.
@@ -128,8 +131,8 @@ Single-page layout, sections, and skills alignment
 Projects and courses
 --------------------
 - Projects:
-  - For a given job, show **exactly 3 projects** (minimum 3, maximum 3) unless the user explicitly requests a different count; choose projects to best match the posting’s core skills and domains.
-  - Keep each project to **2 bullets** focused on what you built, how you tested it, and any scale/metrics.
+  - For a given job, show **7–8 projects** across both pages (minimum 5, typical 7–8); lead with 3–4 projects that best match the posting’s core skills, then add 3–4 supporting projects that demonstrate breadth (systems, databases, frontend, hardware, etc.).
+  - Keep each project to **2–3 bullets** focused on what you built, how you tested it, and any scale/metrics. **Never collapse to 1 line to save space.**
   - Prefer projects that provide **“proof”** for the most important skills in the job description.
   - When a project heading includes a tech stack (e.g., `Project | Python, Docker, PostgreSQL`):
     - **Every listed technology must have at least one supporting bullet** that mentions it.
@@ -142,11 +145,13 @@ Projects and courses
   - Choose courses that directly support the job’s requirements (e.g., real-time, systems, hardware, security).
   - Keep the full course list in comments in `courses.tex` so targeted subsets can be enabled per job without retyping.
 
-Practical one-page heuristics for this LaTeX template
------------------------------------------------------
+Practical two-page layout for this LaTeX template (Standard)
+-----------------------------------------------------------
 - For this `main.tex` layout (`11pt`, letter, current `config/formatting`):
-  - A single page typically fits:
-    - Heading, Education, Technical Skills, **1 work experience entry with up to 5 bullets**, 3 projects × 2 bullets, and a **one-line** Relevant Courses row.
+  - **Two pages fit comfortably**:
+    - Page 1: Heading, Education, Technical Skills, Work Experience (5–7 bullets), start of Projects
+    - Page 2: Projects continue (7–8 total, 2–3 bullets each), Relevant Courses (one line), Hobbies & Interests
+  - Reference layout: Senior-Software-Systems-Validation-Engineer-GPU-Linux-2026-05-20.pdf (2 pages, 8 projects, 7 experience bullets)
   - If the compiled PDF overflows to a second page:
     - First, remove or merge lower-impact bullets from Projects or Experience until each entry has at most 2–3 bullets.
     - Next, comment out optional sections (Hobbies, extra courses) or long skill lists.

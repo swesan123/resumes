@@ -1,0 +1,22 @@
+# Role: Product Development Engineer 2
+# Company: AMD
+# Date Saved: 2026-05-16
+# Source: User-provided posting text
+
+Product Development Engineer 2 — diagnostics lab / engineering systems (user-provided excerpt)
+
+KEY RESPONSIBILITIES (summary):
+- Technical evaluation and system management; system-level debugging, testing, problem resolution
+- Maintain DIAGs systems and networks; set up and maintain test stations
+- Debug and resolve hardware/software anomalies; IT collaboration
+- Support diagnostic engineers; hardware inventory and lab management
+- Setup and maintain DIAGs hardware, bring-ups, network switches, bench/rack configuration
+- Continuous improvement of lab stations and utilization
+- Root cause analysis and equipment/storage management
+
+PREFERRED EXPERIENCE (summary):
+- NPI/engineering test system setup and debugging
+- Lab management
+- Linux and Windows OS, device setup/debug
+- System-level debugging and testing
+- HTML, JavaScript, SQL, Flask, API integration, Docker, Ansible, Git

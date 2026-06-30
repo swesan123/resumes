@@ -33,6 +33,7 @@ Use this skill when:
 
 3. **Load project canon**
    - Read `resume_guidelines.txt`.
+   - Read `guidelines/writing_guidelines.txt`, `guidelines/technical_skills_guidelines.txt` (including **SECTION 4B — category placement**), `guidelines/work_experience_guidelines.txt` (including **SECTION 12B — platform/lab bullets** and **SECTION 12C — banned phrases**), and `guidelines/projects_guidellines.txt` before editing bullets, project ordering, or `sections/skills.tex`.
    - Assume the `.cursor/rules/latex-resume-tailoring.mdc` rule is active and authoritative.
    - Prefer these over generic resume advice unless the user explicitly overrides.
 
@@ -60,7 +61,7 @@ Use this skill when:
      - Prefer commenting out unused skills over leaving them visible without proof.
      - **Bolding**: In the Technical Skills block, bold **only** the category labels (e.g. `\textbf{Languages}{: Python, C}`). Do **not** bold individual technologies after the colon—lists stay plain text for consistency.
      - **Dedupe and naming**: Do not list synonymous pillars twice (e.g. **RAS** already implies reset-related validation—drop redundant “resets” unless the candidate insists both appear). Use **consistent Title Case** for named validation axes when they read as formal domains (e.g. Performance, System Management) and align the same terms in Experience bullets where those axes appear.
-     - **Row budget**: Extra skill rows often trigger **page overflow** before bullets do. After substantive skills edits, **compile**; if the PDF exceeds one page, merge related tokens onto one row (e.g. stack libraries under an existing category) or trim bullets—avoid silently shipping two pages.
+     - **Row budget**: Extra skill rows can trigger page overflow. After substantive skills edits, **compile**; if the user wants a **two-page** resume (this repo default unless they ask for one page), **do not** merge project bullets into single lines or drop hobbies/projects only to force one page—comment lower-priority `\input{...}` projects instead.
    - **Skills vs. responsibilities (repo feedback)**:
      - List **repeatable technologies, platforms, and domains** under Technical Skills only when at least one **Experience, Project, or Courses** line proves them.
      - Describe **how work was done** (e.g. out-of-band consoles, integration bring-up, customer rack configs) in **bullets**; do not treat those phrases as interchangeable “skill tags” unless the candidate keeps them as proof-backed tokens. If removed from `skills.tex`, remove matching tokens from the employer **keyword pipe** (or add honest proof in the same pass).
@@ -73,18 +74,19 @@ Use this skill when:
      - Write so a **non-specialist recruiter** can follow the first half of the line, while **JD keywords** remain visible for a technical reader.
      - Avoid **two experience bullets** that repeat the same OS list and the same validation-pillar list—split **test orchestration / ownership** from **platform imaging / BMC / BIOS** (or similar) so each line has a distinct job.
    - **Projects**:
-     - Enable **exactly 3 projects** (minimum **3**, maximum **3**): pick the three best matches for the posting unless the user explicitly requests four.
+     - Enable **7–8 projects** across both pages (minimum **5**, typical **7–8**): lead with 3–4 projects that best match the posting, then add 3–4 supporting projects to show breadth.
      - Comment out other `\input{sections/projects/...}` lines in `projects.tex` instead of deleting them.
    - **Courses**:
      - Ensure `courses.tex` renders at most a **single `\item` line** with 3–6 short, relevant course names.
      - Keep the full course list in comments so it can be reused for other roles.
 
-7. **Enforce one-page layout**
-   - Aim for a single-page resume by:
-     - Trimming or merging low-impact bullets.
-     - Commenting out optional sections (e.g., Hobbies, long course lists) when they cause overflow.
-   - Only keep additional sections if they clearly support the current job (e.g., hardware-heavy courses for firmware roles).
-   - **JD-first density**: When the posting is infra/automation/Linux-heavy but the strongest proof is domain-specific (e.g. GPU validation acronyms), lead with responsibilities and keywords from the **JD**, keep specialist proof second—so screeners see overlap before niche pillars.
+7. **Page layout (default: two pages)**
+   - **Default: Two pages** is the standard—never apologize for or force one page unless the user explicitly asks.
+   - Keep **full project bullets** (typically **2–3 per project**); do **not** collapse multiple bullets into one line just to save space.
+   - Fill **both pages with substance**: Page 1 has heading, education, skills, experience; Page 2 continues projects, courses, and hobbies.
+   - To manage overflow (rare): comment out lower-priority `\input{sections/projects/...}` lines (keep **at least 5** active), trim verbose wording, or comment optional sections—never merge bullets.
+   - Keep **Hobbies** and all sections visible; they complete the narrative of who you are as an engineer.
+   - **JD-first sequencing**: Lead with 3–4 projects that match the posting keywords, then include breadth projects—so recruiters see role alignment first, then versatility.
 
 8. **Apply changes**
    - Edit the relevant `.tex` section files directly in this repo.
@@ -95,7 +97,7 @@ Use this skill when:
 9. **Compile and archive the PDF** (`resumes/`)
    - Compile `main.tex` so `main.pdf` is up to date (run from repo root if needed).
    - **Compile gate (mandatory)**:
-     - Run `latexmk` or `pdflatex` until the log is clean of **LaTeX errors** and the PDF is **exactly one page** (`Output written on main.pdf (1 page, …)`).
+     - Run `latexmk` or `pdflatex` until the log is clean of **LaTeX errors**. Target **1–2 pages** (default **2** when content is dense); do **not** fail the pass solely because the PDF is two pages unless the user required one page.
      - Scan the log for **`Overfull \hbox`** on experience headings; if present, shorten the keyword line, adjust wrapping in `config/commands.tex`, or reduce duplicate tokens—do **not** ship obvious layout breakage.
      - If you change any macro in `config/commands.tex` (especially argument count), **`grep` all call sites** (e.g. `\resumeSubheadingProminent`) and update every invocation in the same edit pass.
    - **PDF basename**: `<Role-With-Dashes>-YYYY-MM-DD.pdf` (spaces → `-`; shell-safe).
@@ -141,12 +143,12 @@ Short checklist distilled from real tailoring rounds:
 
 | Issue | What to do instead |
 |--------|---------------------|
-| Fewer than **3** projects shown | Always enable **exactly 3** `\input{...}` lines in `projects.tex` unless the user explicitly asks for a different count; never ship 2 “to save space” without trimming elsewhere first. |
+| Fewer than **7–8** projects shown (2-page standard) | Enable 7–8 `\input{...}` lines in `projects.tex` by default; lead with 3–4 strongest matches, then add breadth projects. Never reduce to 3 projects just to force one page—two pages is the goal. Reference: Senior-Software-Systems-Validation-Engineer-GPU-Linux-2026-05-20.pdf. |
 | Bold inside Technical Skills lists | Category label bold only; technologies after `:` stay roman. Employer/experience **subheading** lines may still bold top JD keywords—that pattern is separate from the Skills block. |
 | Silent **bullet replacement** | Comment prior `\resumeItem` text above the new bullet when it would otherwise disappear from the file. |
 | Redundant skill pillars | Merge synonyms (RAS vs resets) after confirming with the candidate’s terminology. |
 | Inconsistent domain capitalization | Align Skills and Experience on the same capitalized names for formal axes (Performance, System Management, IO). |
-| **Two-page** PDF after skills tweak | Merge skill rows or shorten wording before trimming projects below three. |
+| **Two-page** PDF (standard) | Perfect—this is the goal. Never apologize for or try to force one page. Two pages shows depth and breadth. Reference resume: 2 pages, 8 projects, 7 experience bullets = complete narrative. |
 | Same JD tailored twice | Do not overwrite the existing `postings/<CompanyDir>/…` or `postings/*.txt`; point to the existing file and refresh `main.pdf` / export only. |
 | Missing `resumes/<Company>/` | When the employer is known, **`mkdir -p`** that folder and drop the PDF inside; root-level `resumes/<Role>-<date>.pdf` is only for unknown employers. |
 | Invented tooling claims | Never add MAAS/ROCm/etc. unless the candidate or existing bullets support it; when they assert it, phrase narrowly and honestly. |

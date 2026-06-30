@@ -1,0 +1,534 @@
+# PROJECTS SECTION GUIDELINES
+
+## OVERALL GOAL
+
+The projects section should:
+- Demonstrate practical engineering ability
+- Reinforce technical specialization
+- Showcase ownership and initiative
+- Prove capability beyond coursework
+- Support the target role directly
+- Demonstrate real implementation depth
+- Show systems thinking and technical maturity
+
+Projects should feel:
+- Real
+- Technical
+- Engineering-focused
+- Production-oriented when applicable
+- Impactful
+- Carefully selected
+
+The projects section should NOT:
+- Look like random school assignments
+- Sound tutorial-level
+- Contain generic descriptions
+- Include weak filler projects
+- Read like academic lab reports
+- Include technologies not actually used
+- Include excessive theoretical explanation
+
+--------------------------------------------------
+SECTION 1 — PROJECT SELECTION & RANKING
+--------------------------------------------------
+
+## PROJECTS MUST BE RANKED BY JOB RELEVANCE
+
+Projects should NOT remain in static order.
+
+For every target posting:
+1. Rank projects by relevance
+2. Put strongest/relevant projects first
+3. Hide or deprioritize weak/unrelated projects
+4. Prioritize technical depth + relevance
+
+Priority ranking factors:
+1. Direct match to posting technologies
+2. Direct match to posting responsibilities
+3. Engineering complexity
+4. Real-world applicability
+5. Technical ownership
+6. System design depth
+7. Infrastructure/backend/system exposure
+8. Deployment/production exposure
+9. Scale/performance considerations
+10. Most technically impressive
+
+--------------------------------------------------
+
+## EXAMPLES OF PROJECT PRIORITIZATION
+
+### Infrastructure/Backend Role
+HIGH PRIORITY:
+- Hitchly
+- LLM Marketplace Assistant
+- Linux Log Analysis
+- CI/CD projects
+
+LOW PRIORITY:
+- Database coursework
+- Simple ML assignments
+
+--------------------------------------------------
+
+### Systems/Platform Role
+HIGH PRIORITY:
+- Linux tooling
+- Log analysis
+- Automation
+- Large-scale processing
+- Docker/Linux projects
+
+LOW PRIORITY:
+- UI-focused projects
+
+--------------------------------------------------
+
+### ML/AI Role
+HIGH PRIORITY:
+- RAG assistant
+- Neural network project
+- SVM classification
+- Log analysis/NLP
+
+--------------------------------------------------
+
+## DO NOT SHOW ALL PROJECTS IF NOT USEFUL
+
+Weak or irrelevant projects may:
+- Be shortened
+- Be deprioritized
+- Be removed entirely
+
+The section should feel curated and intentional.
+
+--------------------------------------------------
+SECTION 2 — JOB POSTING CUSTOMIZATION
+--------------------------------------------------
+
+## PROJECTS MUST BE TAILORED TO THE JOB POSTING
+
+Each project should:
+- Match keywords from posting
+- Match technologies from posting
+- Match engineering focus of posting
+- Reword bullets toward target role
+
+Examples:
+Backend role:
+- emphasize APIs
+- databases
+- distributed systems
+- CI/CD
+- scalability
+
+Systems role:
+- emphasize Linux
+- automation
+- debugging
+- performance
+- infrastructure
+
+ML role:
+- emphasize pipelines
+- training
+- preprocessing
+- evaluation
+- deployment
+
+--------------------------------------------------
+
+## IMPORTANT REWORDING RULE
+
+DO NOT delete old bullets.
+
+Instead:
+1. Comment out old versions
+2. Keep previous wording
+3. Add newly tailored bullets underneath
+
+Example:
+
+# OLD:
+# • Built APIs for backend integration.
+
+NEW:
+• Developed scalable **Node.js** backend APIs with **PostgreSQL** integration to support containerized client-server workflows and automated deployment pipelines.
+
+--------------------------------------------------
+
+## REUSE EXISTING BULLETS FIRST
+
+Before generating a new bullet:
+1. Search existing project bullets
+2. Reuse strong matching bullets
+3. Reword existing bullets first
+4. Create new bullets only if necessary
+
+Reason:
+- Maintains authenticity
+- Preserves consistency
+- Prevents hallucinated experience
+- Produces more believable resumes
+
+--------------------------------------------------
+SECTION 3 — PROJECT HEADER SKILLS RULES
+--------------------------------------------------
+
+## HEADER SKILLS MUST COME FROM TECHNICAL SKILLS SECTION
+
+GOOD:
+Hitchly Ride Share Application | **Node.js**, **PostgreSQL**, **Docker**
+
+BAD:
+Hitchly Ride Share Application | scalable backend systems, APIs, CI/CD workflows
+
+Only real technologies/tools are allowed.
+
+--------------------------------------------------
+
+## EVERY HEADER SKILL MUST APPEAR IN BULLETS
+
+CRITICAL RULE:
+If a technology appears beside the project title,
+that technology MUST appear somewhere in the bullets.
+
+Example:
+
+HEADER:
+Python, Docker, AWS ECS
+
+Then bullets MUST explicitly contain:
+- **Python**
+- **Docker**
+- **AWS ECS**
+
+If not:
+- remove the technology from header
+OR
+- add a real bullet mentioning it
+
+--------------------------------------------------
+
+## ALL HEADER SKILLS MUST BE BOLDED IN BULLETS
+
+Example:
+
+• Built **Docker**-containerized backend services in **Node.js** with **PostgreSQL** integration.
+
+This improves:
+- Recruiter scanning
+- ATS visibility
+- Technical readability
+
+--------------------------------------------------
+SECTION 4 — PROJECT BULLET STRUCTURE
+--------------------------------------------------
+
+## Preferred formula
+
+[ACTION VERB] + [TECHNICAL IMPLEMENTATION] + [TECHNOLOGIES] + [IMPACT]
+
+GOOD:
+• Built a retrieval-augmented generation assistant using **LangChain**, **Docker**, and **AWS ECS** to support automated marketplace question answering with sub-second retrieval performance.
+
+GOOD:
+• Developed a configurable log normalization pipeline in **Python** using **NumPy** and **pandas** for large-scale Linux log preprocessing and statistical analysis.
+
+BAD:
+• Created an AI chatbot.
+
+BAD:
+• Worked on machine learning models.
+
+--------------------------------------------------
+SECTION 5 — TECHNICAL DEPTH
+--------------------------------------------------
+
+## Projects should emphasize implementation details
+
+Projects should communicate:
+- Architecture
+- Infrastructure
+- Pipelines
+- Deployment
+- Data flow
+- Scalability
+- Automation
+- Integration
+- Systems thinking
+
+GOOD:
+• Deployed **Docker**ized inference services on **AWS ECS** with **S3**-backed retrieval pipelines and CI/CD automation.
+
+BAD:
+• Used AWS services.
+
+GOOD:
+• Implemented CI pipelines using **GitHub Actions** and **Docker** for automated linting, testing, and pull request validation.
+
+BAD:
+• Added CI/CD support.
+
+--------------------------------------------------
+SECTION 6 — AVOID TUTORIAL-STYLE WRITING
+--------------------------------------------------
+
+## Projects should sound engineering-oriented
+
+BAD:
+• Learned React and built a website.
+
+BAD:
+• Used machine learning to classify data.
+
+GOOD:
+• Implemented support vector machine classifiers using **scikit-learn** with preprocessing and hyperparameter tuning pipelines for solar flare intensity prediction.
+
+GOOD:
+• Built real-time stock visualization dashboards using **React** and **D3.js** consuming simulated streaming market feeds.
+
+Projects should sound:
+- practical
+- implementation-focused
+- engineering-heavy
+
+--------------------------------------------------
+SECTION 7 — OWNERSHIP & INITIATIVE
+--------------------------------------------------
+
+## Strong projects show ownership
+
+GOOD:
+• Designed recurring trip scheduling architecture supporting automated ride generation workflows.
+
+GOOD:
+• Built end-to-end backend infrastructure using **Node.js**, **PostgreSQL**, and **Docker**.
+
+BAD:
+• Contributed to project development.
+
+Projects should clearly show:
+- what YOU implemented
+- what YOU designed
+- what YOU deployed
+
+--------------------------------------------------
+SECTION 8 — METRICS & IMPACT
+--------------------------------------------------
+
+## Include metrics when realistic
+
+Strong metrics:
+- Dataset sizes
+- Response latency
+- File sizes
+- Throughput
+- Processing scale
+- Automation coverage
+- Deployment scale
+- Runtime improvements
+
+GOOD:
+• Processed tens of thousands of labeled Linux log entries using **Python** and **scikit-learn** for statistical term analysis.
+
+GOOD:
+• Built sorting utilities supporting several hundred megabytes of input data on **Linux** systems.
+
+GOOD:
+• Reduced diagnostic setup overhead using reusable automation and containerized workflows.
+
+--------------------------------------------------
+
+## Metrics must remain believable
+
+DO NOT:
+- Fake scale
+- Exaggerate production usage
+- Claim enterprise-scale architecture unrealistically
+
+Projects should sound:
+- technically strong
+- believable
+- grounded
+
+--------------------------------------------------
+SECTION 9 — ATS OPTIMIZATION
+--------------------------------------------------
+
+## Use exact technologies recruiters search for
+
+GOOD:
+- PostgreSQL
+- Docker
+- LangChain
+- React Native
+- GitHub Actions
+- AWS ECS
+- Lambda
+- scikit-learn
+
+BAD:
+- cloud services
+- backend frameworks
+- AI technologies
+
+Exact keywords matter.
+
+--------------------------------------------------
+SECTION 10 — PROJECT DENSITY
+--------------------------------------------------
+
+## Strong project bullets are:
+- Dense
+- Technical
+- Concise
+- Information-rich
+
+Avoid:
+- Long storytelling
+- Multi-sentence paragraphs
+- Academic explanation
+- Excessive theory
+
+Target:
+1–2 lines per bullet ideally.
+
+--------------------------------------------------
+SECTION 11 — PROJECT TYPE POSITIONING
+--------------------------------------------------
+
+## BACKEND PROJECTS
+
+Emphasize:
+- APIs
+- Databases
+- Infrastructure
+- Scalability
+- CI/CD
+- Deployment
+- Containerization
+
+--------------------------------------------------
+
+## SYSTEMS PROJECTS
+
+Emphasize:
+- Linux
+- Automation
+- Performance
+- Large-scale processing
+- Scripting
+- Infrastructure
+- Pipelines
+
+--------------------------------------------------
+
+## ML/AI PROJECTS
+
+Emphasize:
+- Data pipelines
+- Preprocessing
+- Training
+- Evaluation
+- Deployment
+- Inference
+- Statistical analysis
+
+--------------------------------------------------
+
+## FULL-STACK/MOBILE PROJECTS
+
+Emphasize:
+- End-to-end architecture
+- Backend integration
+- Authentication
+- Payments
+- CI/CD
+- Deployment
+- Real-world usability
+
+--------------------------------------------------
+SECTION 12 — PROJECT QUALITY FILTER
+--------------------------------------------------
+
+## Weak projects should be rewritten or hidden
+
+Weak projects:
+- Tutorial clones
+- Extremely small assignments
+- Purely academic labs
+- Generic CRUD apps
+- Unfinished toy projects
+
+Strong projects:
+- Systems-heavy
+- Infrastructure-heavy
+- Full-stack applications
+- ML pipelines
+- Automation tooling
+- Deployment-focused
+- Real-world problem solving
+
+--------------------------------------------------
+SECTION 13 — AI WRITING RESTRICTIONS
+--------------------------------------------------
+
+## Avoid obvious AI-generated phrasing
+
+DO NOT USE:
+- Leveraged cutting-edge technologies
+- Innovative AI solution
+- Dynamic scalable architecture
+- Robust enterprise-grade platform
+- End-to-end synergistic pipeline
+
+Prefer:
+- Direct technical statements
+- Concrete engineering actions
+- Exact technologies
+
+--------------------------------------------------
+SECTION 14 — AUTHENTICITY RULES
+--------------------------------------------------
+
+## Projects must remain truthful and believable
+
+DO:
+- Emphasize real implementation work
+- Highlight actual technologies used
+- Reword for relevance honestly
+
+DO NOT:
+- Invent distributed systems
+- Fake production scale
+- Claim architecture never built
+- Invent deployment complexity
+
+The projects should sound:
+- technically mature
+- authentic
+- engineering-oriented
+
+--------------------------------------------------
+SECTION 15 — FINAL QUALITY CHECK
+--------------------------------------------------
+
+Before finalizing ANY projects section:
+
+CHECK:
+- Are projects ranked by relevance to the posting?
+- Are the strongest projects first?
+- Are all header technologies used in bullets?
+- Are all header technologies bolded in bullets?
+- Are bullets technically dense?
+- Do projects sound implementation-focused?
+- Do bullets avoid tutorial-style wording?
+- Does each project reinforce target role positioning?
+- Are technologies explicit and ATS-friendly?
+- Were old bullets commented out instead of deleted?
+- Were existing bullets reused before generating new ones?
+- Do projects sound believable and technically mature?
+- Would a recruiter quickly understand technical strengths?
+
+If not, rewrite it.

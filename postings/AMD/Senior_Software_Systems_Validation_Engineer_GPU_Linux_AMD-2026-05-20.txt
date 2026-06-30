@@ -1,0 +1,68 @@
+# Role: Senior Software Systems Validation Engineer (GPU & Linux)
+# Company: AMD
+# Requisition ID: 2026-79398
+# Date saved: 2026-05-20
+# Source: user-provided posting text
+
+Senior Software Systems Validation Engineer (GPU & Linux)
+Requisition Post Information* : Posted Date6 hours ago(5/20/2026 11:43 AM)
+Requisition ID 2026-79398 # of Openings (If multiple openings are needed, please create multiple requisitions) 1 Category (Portal Searching) Engineering Hiring Target Min CAD $132,000.00/Yr. Hiring Target Max CAD $198,000.00/Yr.
+WHAT YOU DO AT AMD CHANGES EVERYTHING 
+
+At AMD, our mission is to build great products that accelerate next-generation computing experiences—from AI and data centers, to PCs, gaming and embedded systems. Grounded in a culture of innovation and collaboration, we believe real progress comes from bold ideas, human ingenuity and a shared passion to create something extraordinary. When you join AMD, you'll discover the real differentiator is our culture. We push the limits of innovation to solve the world's most important challenges—striving for execution excellence, while being direct, humble, collaborative, and inclusive of diverse perspectives. Join us as we shape the future of AI and beyond.  Together, we advance your career.  
+
+Responsibilities
+THE ROLE:
+
+We are looking for an experienced Engineer, who with their software systems engineering expertise, to join our growing team. As a key contributor to the success of AMD's products, you will be part of a leading team to drive and improve AMD's abilities to deliver the highest quality, industry-leading technologies to market.
+
+THE PERSON:
+
+Curiosity will drive learning to improve how we as a group, and an organization, can get better every day, and your peers will provide a diverse and encouraging environment for career growth, driving the opportunity to be a part of Delighting Our Customers.
+
+We at AMD are Gamers and Performance Enthusiasts at heart, so if you like Acute Performance and seeing your work provide direct benefits to our customers' quality of computing life, you would love our team.
+
+KEY RESPONSIBILITIES:  
+
+Drive technical innovation to improve AMD's capabilities across product development and validation, including software tools and script development, technical and procedural methodology enhancement, and various internal and cross-functional initiatives.  
+Convert feature specifications into test cases (manual and automated) that will cover several types of testing - boundary, negative, functional, etc.  
+Work with multiple teams and tracking test execution to make sure all features are validated and optimized on time.  
+Work closely with supporting technical teams to validate new software features and new OS (Operating System) introduction.  
+Experience in implementing and optimizing parallel methods on GPU accelerators (NCCL/RCCL, OpenMP, MPI)
+Lead collaborative approaches with multiple teams.  
+Mentor others to achieve integrated projects. 
+
+PREFERRED EXPERIENCE:  
+
+Good understanding of test lifecycle, QA process & terminology.
+Strong knowledge of Device drivers, graphics, multimedia, Codec.
+Test Execution Experience in an automation lab with multiple systems.
+Define, develop, execute functional/performance/load tests, and integrate them with automated test systems.
+Establishing and sharing best practices, designing, and executing a robust test strategy.
+Proficiency in at least one programming language preferably Python.
+Strong understanding & Hands-on exp. with Linux OS internals, device manager.
+Hands-on issue debugging skills, issue isolation with Linux kernel, driver module level.
+Strong understanding of PC hardware, SoC, Chipsets, Graphics cards, BIOS & VBIOS.
+Understanding of parallel programming, ideally OpenCL, ROCm, CUDA, and OpenACC.
+Understanding machine learning, artificial intelligence, computer vision technologies is a must.
+Strong analysis, problem-solving & interpersonal skills.
+Good verbal & written communication skill is a must.
+Good attitude, result-driven & ability to deliver on next-gen technology.
+Knowledge of KVM/XEN/VMWARE is a plus 
+
+ACADEMIC CREDENTIALS:
+
+Bachelor's or Master's degree in related discipline preferred 
+
+#LI-TC1
+
+#LI-HYBRID
+
+Qualifications
+Benefits offered are described:  AMD benefits at a glance.
+
+AMD does not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services. AMD and its subsidiaries are equal opportunity, inclusive employers and will consider all applicants without regard to age, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, pregnancy, sexual orientation, gender identity, military or veteran status, or any other characteristic protected by law.   We encourage applications from all qualified candidates and will accommodate applicants' needs under the respective laws throughout all stages of the recruitment and selection process.
+
+AMD may use Artificial Intelligence to help screen, assess or select applicants for this position.  AMD's "Responsible AI Policy" is available here.
+
+This posting is for an existing vacancy.

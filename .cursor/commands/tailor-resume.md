@@ -12,8 +12,8 @@ Steps:
 - Follow `resume_guidelines.txt` for bullet style, bolding, and impact/metrics.
 - Directly edit the relevant `.tex` files (e.g., `sections/projects/*.tex`, `sections/experience/*.tex`, `sections/skills.tex`, `sections/courses.tex`, etc.) with minimal diffs to best match the job, without inventing experience.
 - Automatically:
-  - Keep the resume to a **single page** by trimming low-impact bullets and commenting out lower-priority sections if needed.
-  - Enable **exactly 3 projects** that best match the posting and comment out the rest in `projects.tex`.
+  - **Default to a two-page resume** (standard); do **not** force one page unless the user explicitly asks. Never merge project bullets to one line for layout.
+  - Enable the **best-matching 7–8 projects** for the posting (lead with 3–4 strongest matches, then add breadth projects); comment out the rest in `projects.tex`. Keep **2–3 bullets per active project** to fill both pages with substance—never trim bullets to save space.
   - In Technical Skills, bold **only** category labels, not the technologies after each colon.
   - Keep **Technical Skills** aligned with **honest proof** (Experience, Projects, Courses): list technologies and domains, put **how you worked** (OOB sessions, bring-up campaigns, etc.) primarily in **bullets**; merge synonyms such as **`BIOS/UEFI`** instead of duplicating; when you remove a token from `skills.tex`, remove it from the employer **keyword pipe** too (or restore proof in the same pass).
   - Prefer **metrics** with a short **because** (mechanism or scope); **bold** headline quantities when consistent with `resume_guidelines.txt` and layout; do not fabricate numbers.
@@ -21,7 +21,7 @@ Steps:
   - Ensure every skill listed in `Technical Skills` has clear “proof” in at least one bullet, commenting out unproven skills.
 - Rebuild `main.tex`, then export the compiled PDF per `resume_guidelines.txt`: **`mkdir -p resumes/<CompanyDir>`** when the employer is known, then save **`resumes/<CompanyDir>/<Role-With-Dashes>-YYYY-MM-DD.pdf`**; if the employer is unknown, save **`resumes/<Role-With-Dashes>-YYYY-MM-DD.pdf`** at repo root only.
 - **Quality gates** (see `.cursor/skills/latex-resume-tailoring/SKILL.md` → *Compile gate*, *Experience heading rules*):
-  - Compile until **no errors**, PDF is **one page**, and **`Overfull \hbox`** on headings is addressed.
+  - Compile until **no errors** and **`Overfull \hbox`** on headings is addressed (1–2 pages OK; default 2 for dense resumes).
   - Keep employer keyword pipes **tech/domain-heavy**; put coordination and soft themes in **bullets** unless the user explicitly overrides.
   - Keep **Technical Skills** bolding per `resume_guidelines.txt` (category labels only after each colon).
   - Any change to macro **arity** in `config/commands.tex` requires **`grep` all call sites** updated together.

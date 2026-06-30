@@ -1,0 +1,419 @@
+# TECHNICAL SKILLS SECTION GUIDELINES
+
+## OVERALL GOAL
+
+The technical skills section should:
+- Quickly communicate technical breadth
+- Reinforce resume positioning
+- Be ATS-friendly
+- Look clean and intentional
+- Prioritize engineering-relevant technologies
+- Group technologies logically
+
+The technical skills section should NOT:
+- Contain buzzwords
+- Include vague concepts
+- Include filler
+- Read like random keyword stuffing
+- Include weak/non-technical tools unless highly relevant
+- Mix unrelated technologies together
+
+The section should feel:
+- Structured
+- Technical
+- Clean
+- Senior-engineer-inspired
+- Easy to scan in under 10 seconds
+
+--------------------------------------------------
+SECTION 1 — WHAT MAKES A BAD SKILLS SECTION
+--------------------------------------------------
+
+BAD EXAMPLE:
+Languages: C, C++, Python, SQL
+Systems: Linux, Bash, Windows, GitHub, Docker, ROCm, BMC, BIOS/UEFI
+Software Engineering: APIs, client-server integration, debugging, test automation, production quality workflows, Cursor, GitHub Copilot
+Databases: PostgreSQL, IBM DB2
+
+Problems:
+- Categories are inconsistent
+- "Software Engineering" is too vague
+- Includes concepts instead of technologies
+- Includes buzzword/filler phrases
+- "production quality workflows" is meaningless
+- Cursor/GitHub Copilot should not usually appear
+- APIs/debugging are not skills categories
+- Technologies are mixed randomly
+- Weak prioritization
+- Lacks engineering specialization identity
+
+--------------------------------------------------
+SECTION 2 — CORE PRINCIPLES
+--------------------------------------------------
+
+## Principle 1: ONLY include real technical tools/technologies
+
+GOOD:
+- Python
+- PostgreSQL
+- Docker
+- Linux
+- React Native
+- KVM/QEMU
+
+BAD:
+- APIs
+- Debugging
+- Problem solving
+- Client-server integration
+- Production quality workflows
+- Team collaboration
+
+Concepts belong in experience bullets, NOT technical skills.
+
+--------------------------------------------------
+
+## Principle 2: Group technologies logically
+
+GOOD GROUPS:
+- Languages
+- Frameworks
+- Databases
+- Cloud/Infrastructure
+- Developer Tools
+- Operating Systems
+- Virtualization
+- Hardware/Platform Technologies
+
+BAD GROUPS:
+- Software Engineering
+- Miscellaneous
+- Other
+- Technical Stuff
+
+--------------------------------------------------
+
+## Principle 3: Skills should support target role positioning
+
+The skills section should reinforce:
+- Systems engineering
+- Platform engineering
+- Backend engineering
+- Full-stack/mobile engineering
+- Infrastructure/automation engineering
+
+The section should NOT make the candidate look:
+- unfocused
+- junior
+- keyword-stuffed
+
+--------------------------------------------------
+SECTION 3 — WHAT TO INCLUDE
+--------------------------------------------------
+
+## Include:
+- Languages
+- Frameworks/libraries
+- Databases
+- Infrastructure/platform tools
+- OS/platforms
+- Virtualization tools
+- Engineering-relevant tooling
+- Hardware/system technologies
+
+## Do NOT include:
+- Soft skills
+- Generic concepts
+- IDEs unless extremely relevant
+- AI assistants/tools unless directly job-relevant
+- Microsoft Office
+- Internet browsing tools
+- Generic workflow concepts
+
+--------------------------------------------------
+SECTION 4 — CATEGORY STRUCTURE
+--------------------------------------------------
+
+Preferred structure:
+
+Languages:
+Databases:
+Frameworks & Libraries:
+Infrastructure & Platforms:
+Operating Systems:
+Virtualization & Systems:
+Developer Tools:
+
+Optional:
+Cloud & DevOps:
+Hardware & Validation:
+AI Tools:
+
+Ordering rule:
+1. Languages (always first)
+2. Databases (always second)
+3. Remaining categories ordered by relevance to the target job posting
+
+--------------------------------------------------
+SECTION — TECHNICAL SKILLS CATEGORY OPTIMIZATION
+--------------------------------------------------
+
+## Minimize category count
+
+The technical skills section should typically contain:
+- 3 to 5 categories MAXIMUM
+- Dense but readable grouping
+- Broad engineering-oriented categories
+
+DO NOT create excessive micro-categories.
+
+## Preferred category structure
+
+OPTION 1:
+- Languages
+- Frameworks & Technologies
+- Infrastructure & Systems
+- Developer Tools
+
+OPTION 2:
+- Languages
+- Frameworks & Libraries
+- Systems & Infrastructure
+- Developer Tools
+
+OPTION 3:
+- Languages
+- Technologies
+- Tools & Infrastructure
+
+## Merge related technologies aggressively
+
+- Merge Linux, Docker, ROCm, BMC, BIOS/UEFI under Systems & Infrastructure.
+- Merge Git, Bash, GitHub Actions, Quartus under Developer Tools.
+- Merge React Native, Node.js, and ML libraries under Frameworks & Libraries.
+
+## Avoid weak/artificial categories
+
+Do not use narrow categories such as AI Tools, Software Engineering, Miscellaneous, Hardware & Validation, GPU & Platform Tools, or Operating Systems when they fragment readability.
+
+## AI coding assistants
+
+- Do not include Cursor, GitHub Copilot, or ChatGPT by default.
+- Include AI assistants only when a posting explicitly requires AI-assisted development tools.
+
+## Prefer technologies over concepts
+
+GOOD: ROCm, Docker, BIOS/UEFI, GitHub Actions
+BAD (default): RAS, IO, Performance, Memory, System Management listed as random skill tags without an IP row
+
+Concepts belong in experience bullets by default, not scattered in Technical Skills.
+
+Exception — Hardware IP Domains row (AMD / post-silicon GPU validation targeting only):
+- Use a dedicated **Hardware IP Domains:** category for validation domain pillars (RAS, Int-IO, Ext-IO, GFX, PPA, Memory, System Management) when each is proven in Experience bullets on the active resume.
+- Do not put validation pillars under Languages, Frameworks, or Systems & Infrastructure.
+
+--------------------------------------------------
+SECTION 4B — CATEGORY PLACEMENT (WHAT GOES WHERE AND WHY)
+--------------------------------------------------
+
+Use this when adding or moving tokens during tailoring. Every token on the resume must have honest proof in Experience, Projects, or Courses.
+
+## Row definitions
+
+**Languages**
+- General-purpose languages you write code in: Python, C++, C, Java, TypeScript, SQL (as a language).
+- NOT here: OS names, Docker, BMC, validation pillar acronyms, PyTorch, Git.
+
+**Hardware IP Domains** (post-silicon / datacenter GPU validation roles only)
+- AMD validation domains exercised on silicon: RAS, Int-IO, Ext-IO, GFX, PPA, Memory, System Management.
+- NOT here: programming languages, ROCm, Docker, Git, KVM.
+
+**Databases**
+- Database products only: PostgreSQL, Supabase, IBM DB2.
+- List IBM DB2 only if the active resume shows DB2 in a project heading or bullet (not filename alone).
+- NOT here: SQL as a skill tag (keep SQL under Languages); ER design narratives belong in project bullets.
+
+**AI Tools**
+- IDE / coding assistants: Cursor, GitHub Copilot.
+- NOT here: PyTorch, TensorFlow, ROCm, rocJPEG, LangChain (those are AI & ML Libraries or Systems).
+
+**Frameworks & Libraries**
+- App and web frameworks: React Native, Node.js, Next.js, React.
+- NOT here: ML runtimes, numeric stacks, rocJPEG (→ AI & ML Libraries); Linux, KVM, BMC.
+
+**AI & ML Libraries**
+- ML runtimes, numeric stacks, and GPU media libs used in projects or AMD bullets: PyTorch, TensorFlow/Keras, Scikit-learn, NumPy, Pandas, Matplotlib, rocJPEG.
+- Keep this row contiguous for readability; rocJPEG belongs here with other libraries, not under AI Tools or Systems.
+- NOT here: Linux, Windows, KVM, ROCm (→ Systems & Infrastructure).
+
+**Systems & Infrastructure**
+- OS umbrella and distros: Linux, Ubuntu, RHEL, CentOS, Windows.
+- Virtualization: KVM, QEMU.
+- Containers / GPU platform: Docker, ROCm.
+- Rack/platform firmware interfaces: BMC, BIOS/UEFI.
+- CI / deployment targets: GitHub Actions, Vercel (deployment platform, not a developer tool).
+- NOT here: Git, Bash (→ Developer Tools); Quartus (→ Developer Tools); GFX as a domain (→ Hardware IP Domains); PyTorch (→ AI & ML Libraries).
+
+**Developer Tools**
+- Version control, shells, EDA: Git, Bash, Quartus.
+- NOT here: frameworks, OS images, ROCm.
+
+## Quick lookup (token → correct row → common mistake)
+
+| Token | Correct row | Common wrong row |
+|-------|-------------|------------------|
+| Python, C++ | Languages | Frameworks |
+| RAS, Int-IO, Ext-IO, GFX, PPA | Hardware IP Domains (validation roles) | Systems or Languages |
+| PostgreSQL, Supabase | Databases | Languages |
+| PyTorch, rocJPEG | AI & ML Libraries | Systems or AI Tools |
+| React, Next.js | Frameworks & Libraries | AI & ML Libraries |
+| Linux, Ubuntu, RHEL, CentOS | Systems & Infrastructure | Languages |
+| KVM, QEMU, Docker, ROCm | Systems & Infrastructure | Developer Tools |
+| Vercel, GitHub Actions | Systems & Infrastructure | Developer Tools |
+| BMC, BIOS/UEFI | Systems & Infrastructure | Hardware IP Domains |
+| Git, Bash | Developer Tools | Systems |
+| Cursor, Copilot | AI Tools | Frameworks |
+
+--------------------------------------------------
+SECTION 5 — HOW TO PRIORITIZE SKILLS
+--------------------------------------------------
+
+## Put strongest/relevant technologies first
+
+Example:
+Languages: Python, C++, C, TypeScript, SQL
+
+NOT:
+Languages: SQL, C, Python, JavaScript, HTML
+
+Order should reflect:
+1. Strongest competency
+2. Most relevant to target roles
+3. Most technically impressive
+4. Most used recently
+
+--------------------------------------------------
+SECTION 6 — REMOVE WEAK/FILLER ITEMS
+--------------------------------------------------
+
+DO NOT INCLUDE:
+- Cursor
+- GitHub Copilot
+- ChatGPT
+- APIs
+- Debugging
+- Testing
+- Agile
+- Scrum
+- Communication
+- Client-server integration
+- Production workflows
+
+Reason:
+These are either:
+- Expected baseline concepts
+- Buzzwords
+- Not actual technologies
+- Better demonstrated in experience bullets
+
+--------------------------------------------------
+SECTION 7 — GOOD EXAMPLES
+--------------------------------------------------
+
+GOOD EXAMPLE (SYSTEMS/SOFTWARE ENGINEERING FOCUSED):
+
+Technical Skills
+
+Languages: Python, C++, C, TypeScript, SQL
+
+Frameworks & Libraries: React Native, Expo, Node.js, Hono, tRPC, TanStack Query
+
+Databases: PostgreSQL, Supabase
+
+Infrastructure & Platforms: Docker, GitHub Actions, Stripe Connect, ROCm
+
+Operating Systems: Linux (Ubuntu, CentOS), Windows
+
+Virtualization & Systems: KVM/QEMU, Hyper-V, BMC, BIOS/UEFI, SR-IOV
+
+Developer Tools: Git, Bash, Drizzle ORM, TurboRepo, pnpm
+
+--------------------------------------------------
+
+GOOD EXAMPLE (MORE SYSTEMS-ENGINEERING FOCUSED):
+
+Technical Skills
+
+Languages: Python, C++, C, Bash, SQL
+
+Infrastructure & Platforms: Docker, GitHub Actions, ROCm
+
+Operating Systems: Linux (Ubuntu, CentOS), Windows
+
+Virtualization & Systems: KVM/QEMU, Hyper-V, BMC, BIOS/UEFI, SR-IOV
+
+Hardware & Validation: RAS Injection Testing, Platform Validation, GPU Debugging
+
+Developer Tools: Git, Bash, Drizzle ORM
+
+--------------------------------------------------
+SECTION 8 — FORMATTING RULES
+--------------------------------------------------
+
+Formatting should be:
+- Dense
+- Clean
+- Easy to scan
+- ATS-friendly
+
+Use:
+Category: item, item, item
+
+Avoid:
+- Bullet nesting
+- Long descriptions
+- Explanations beside each skill
+- Multi-line clutter when avoidable
+
+--------------------------------------------------
+SECTION 9 — ATS OPTIMIZATION
+--------------------------------------------------
+
+The section should naturally contain keywords for:
+- Software engineering
+- Systems engineering
+- Infrastructure engineering
+- Platform validation
+- Backend engineering
+- Full-stack/mobile engineering
+
+Prioritize exact technology names recruiters search for.
+
+GOOD:
+- PostgreSQL
+- React Native
+- KVM/QEMU
+- Docker
+
+BAD:
+- Database technologies
+- Mobile frameworks
+- Virtualization software
+
+--------------------------------------------------
+SECTION 10 — QUALITY CHECK
+--------------------------------------------------
+
+Before finalizing the skills section, check:
+
+- Are all entries actual technologies/tools/platforms?
+- Are categories logically grouped?
+- Are the strongest skills first?
+- Does the section reinforce target engineering roles?
+- Does it avoid fluff and filler?
+- Does it avoid weak resume buzzwords?
+- Would a recruiter quickly understand technical strengths?
+- Does it sound focused and intentional?
+- Does it avoid looking keyword-stuffed?
+
+If not, rewrite it.

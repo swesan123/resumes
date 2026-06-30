@@ -13,17 +13,34 @@
 #
 # Seeds below summarize gaps called out recently for NVIDIA postings (baseline before future increments).
 
+ASIC design and architecture: 2
+Ansible for CI/CD lab automation: 1
 Assertion-based verification (SVA): 2
 Debussy or Verdi-class simulation waveform debug tools: 2
+Design-for-Test (DFT) architecture and SOC implementation flows: 1
+Device driver development and setup/debug: 1
+Datacenter networking infrastructure and validation: 1
 Embedded firmware debug (GDB, C, RISC-V assembly familiarity): 1
+Flask backend web application development: 1
 Formal low-power tooling (Cadence Incisive LP, Synopsys VCS NLP): 2
 Functional coverage with constrained-random stimulus: 2
 GPU memory coherence / high-speed IO protocol verification RTL: 1
+Hardware lifecycle management and platform operations: 1
+HTML and JavaScript for internal lab web portals: 1
+IPMI (Intelligent Platform Management Interface) and lights-out management: 2
 Multi-node distributed data transfer solutions: 1
 Multi-VT clock gating / power gating / DVFS UPF-centric flows: 1
+NCCL or RCCL multi-GPU collectives: 1
+Networking hardware architecture and platform validation: 1
+OpenCL or CUDA or OpenACC: 1
+OpenMP or MPI GPU parallel methods: 1
 Open-source profiling tools codebase contributions: 1
+Perl or TCL scripting for CAD/DFT automation: 1
 Standalone verification or test-plan authorship for DV: 2
+Storage architecture and platform integration: 1
 Synopsys VCS or Cadence Incisive class simulators product flow: 2
 SystemVerilog OOP for layered verification constructs: 2
 UPF power intent specification: 1
 UVM (or reusable verification methodology equivalents): 2
+VBIOS: 1
+Xen or VMware lab virtualization: 1
